@@ -1,16 +1,22 @@
 :root {
 	--bs-font-sans-serif: 'Montserrat';
+	--bs-heading-color: #000;
 	--wfm-transition: all 0.25s linear;
+	--wfm-btn-icon-size: 1.25rem;
 }
 
+.fw-bolder {
+	font-weight: 800 !important;
+}
+
+/* Button */
 .btn {
 	--bs-btn-border-radius: 0;
-	-bs-btn-border-width: 0;
+	--bs-border-width: 0;
 	--bs-btn-padding-x: 2.5rem;
 	--bs-btn-padding-y: 0.75rem;
 	--bs-btn-font-size: 0.875rem;
 	--bs-btn-font-weight: 600;
-	--wfm-btn-icon-size: 1.25rem;
 	transition: var(--wfm-transition);
 	white-space: nowrap;
 }
@@ -58,10 +64,50 @@
 	--bs-btn-active-bg: #d97412;
 	--bs-btn-disabled-color: #fff;
 	--bs-btn-disabled-bg: #d97412;
+
 	background-image: url('images/btn-gradient-bg.png');
 	background-repeat: no-repeat;
 	background-position: -1px -1px;
 	&:hover {
 		background-image: url('/images/btn-gradient-bg-blured.png');
+	}
+}
+
+/* Card */
+.card {
+	--bs-card-border-width: 0;
+	--bs-card-border-radius: 0;
+	--bs-card-spacer-y: 2.5rem;
+	--bs-card-spacer-x: 2.5rem;
+	--bs-card-title-color: #000;
+
+	background: rgb(255, 227, 210);
+	background: linear-gradient(
+		315deg,
+		rgba(255, 227, 210, 1) 0%,
+		rgba(242, 233, 230, 1) 43%,
+		rgba(234, 246, 253, 1) 100%
+	);
+}
+
+.card-icon {
+	svg {
+		width: 50px;
+		height: auto;
+	}
+}
+
+/* Section heading */
+.section-heading {
+	p:first-child {
+		opacity: 0.05;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		p:last-child {
+			transform: translateY(-1rem);
+		}
 	}
 }
