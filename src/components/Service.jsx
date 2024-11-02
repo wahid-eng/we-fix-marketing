@@ -1,6 +1,6 @@
 export default function Service() {
 	return (
-		<div className="owl-carousel service-carousel bg-black text-white pt-4">
+		<div className="owl-carousel service-carousel bg-black text-white py-4">
 			<div className="item">
 				<div className="d-flex gap-5">
 					<svg

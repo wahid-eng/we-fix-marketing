@@ -13,8 +13,8 @@ export default function Newsletter() {
 						Your browser does not support the video tag.
 					</video>
 					<div className="p-5 position-relative z-1 bg-blur bg-black bg-opacity-25">
-						<div className="row align-items-center">
-							<div className="col">
+						<div className="row row-gap-3 align-items-center">
+							<div className="col col-md-12 col-lg-7">
 								<p className="text-white display-6 fw-bolder">
 									READY TO
 									<br />
@@ -23,7 +23,7 @@ export default function Newsletter() {
 									LOCAL MARKETING
 								</p>
 							</div>
-							<div className="col-12 col-md-5">
+							<div className="col">
 								<h6 className="text-white fw-bold mb-3">
 									Sign Up for our weekly marketing &apos;Fix&apos; newsletter
 								</h6>
