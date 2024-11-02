@@ -1,8 +1,8 @@
 export default function Approach() {
 	return (
 		<section className="bg-gradient py-5">
-			<div className="container py-5">
-				<div className="row section-heading text-center text-md-end mb-5 mb-md-0">
+			<div className="container py-lg-5">
+				<div className="row section-heading text-center text-md-end mb-4 mb-md-0">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">OUR APPROACH</p>
 					</div>

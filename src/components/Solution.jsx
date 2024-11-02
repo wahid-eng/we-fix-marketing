@@ -1,11 +1,11 @@
 export default function Solution() {
 	return (
 		<section className="bg-gradient py-5">
-			<div className="container py-5">
-				<div className="row row-cols-1 row-cols-lg-2 mb-5 mb-lg-0 align-items-center">
+			<div className="container py-lg-5">
+				<div className="row row-cols-1 row-cols-lg-2 mb-4 mb-lg-0 align-items-center">
 					<div className="col section-heading text-center text-md-start">
 						<p className="fw-bolder lh-1 mb-0 display-1">THE SOLUTION</p>
-						<p className="fw-bolder mb-5 mb-md-0 mb-lg-5 display-5">
+						<p className="fw-bolder mb-4 mb-md-0 mb-lg-5 display-5">
 							WE HAVE SOLUTIONS
 							<br />
 							FOR YOUR MARKETING!

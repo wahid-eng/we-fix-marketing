@@ -1,8 +1,8 @@
 export default function Guarantee() {
 	return (
 		<section className="bg-gradient py-5">
-			<div className="container py-5">
-				<div className="row section-heading text-center text-md-end mb-5 mb-md-0">
+			<div className="container pb-5 pt-lg-5">
+				<div className="row section-heading text-center text-md-end mb-4 mb-md-0">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">OUR GUARANTEE</p>
 					</div>

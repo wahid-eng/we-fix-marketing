@@ -1,11 +1,11 @@
 export default function Cards() {
 	return (
 		<section className="py-5">
-			<div className="container py-5">
+			<div className="container py-lg-5">
 				<div className="row section-heading text-center">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">OUR PROCESS</p>
-						<p className="fw-bolder mb-5 display-5">NEXT STEPS</p>
+						<p className="fw-bolder mb-4 display-5">NEXT STEPS</p>
 					</div>
 				</div>
 				<div className="row row-cols-1 row-cols-md-3 gap-3 gap-md-0">
