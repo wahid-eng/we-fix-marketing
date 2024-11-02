@@ -1,4 +1,4 @@
-export default function Story() {
+export default function Origin() {
 	return (
 		<section className="py-5">
 			<div className="container py-5">
