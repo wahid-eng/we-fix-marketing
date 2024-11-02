@@ -5,12 +5,12 @@ export default function Cards() {
 				<div className="row section-heading text-center fw-bolder">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">OUR PROCESS</p>
-						<p className="fw-bolder lh-1 mb-5 display-5">NEXT STEPS</p>
+						<p className="fw-bolder mb-5 display-5">NEXT STEPS</p>
 					</div>
 				</div>
 				<div className="row row-cols-1 row-cols-md-3 gap-3 gap-md-0">
 					<div className="col">
-						<div className="card h-100">
+						<div className="card bg-gradient h-100">
 							<div className="card-body">
 								<div className="card-icon mb-4">
 									<svg
@@ -52,7 +52,7 @@ export default function Cards() {
 						</div>
 					</div>
 					<div className="col">
-						<div className="card h-100">
+						<div className="card bg-gradient h-100">
 							<div className="card-body">
 								<div className="card-icon mb-4">
 									<svg
@@ -88,7 +88,7 @@ export default function Cards() {
 						</div>
 					</div>
 					<div className="col">
-						<div className="card h-100">
+						<div className="card bg-gradient h-100">
 							<div className="card-body">
 								<div className="card-icon mb-4">
 									<svg
@@ -118,10 +118,10 @@ export default function Cards() {
 				</div>
 				<div className="row text-center mt-5">
 					<div className="col">
-						<button className="btn btn-gradient">
-							BOOK YOUR CALL{' '}
+						<a href="#" className="btn btn-gradient">
+							BOOK YOUR CALL
 							<img src="/images/arrow-right-up.svg" alt="Arrow" />
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>

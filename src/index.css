@@ -1,6 +1,12 @@
 :root {
 	--bs-font-sans-serif: 'Montserrat';
 	--bs-heading-color: #000;
+	--bs-gradient: linear-gradient(
+		315deg,
+		rgba(255, 227, 210, 1) 0%,
+		rgba(242, 233, 230, 1) 43%,
+		rgba(234, 246, 253, 1) 100%
+	);
 	--wfm-transition: all 0.25s linear;
 	--wfm-btn-icon-size: 1.25rem;
 }
@@ -80,14 +86,6 @@
 	--bs-card-spacer-y: 2.5rem;
 	--bs-card-spacer-x: 2.5rem;
 	--bs-card-title-color: #000;
-
-	background: rgb(255, 227, 210);
-	background: linear-gradient(
-		315deg,
-		rgba(255, 227, 210, 1) 0%,
-		rgba(242, 233, 230, 1) 43%,
-		rgba(234, 246, 253, 1) 100%
-	);
 }
 
 .card-icon {
@@ -106,8 +104,8 @@
 
 @media (min-width: 768px) {
 	.section-heading {
-		p:last-child {
-			transform: translateY(-1rem);
+		p:nth-child(2) {
+			transform: translateY(-1.75rem);
 		}
 	}
 }
