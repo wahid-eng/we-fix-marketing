@@ -1,6 +1,7 @@
 :root {
 	--bs-font-sans-serif: 'Montserrat';
-	--bs-heading-color: #000;
+	--bs-heading-color: #000000;
+	--bs-body-color: #000000;
 	--bs-gradient: linear-gradient(
 		315deg,
 		rgba(255, 227, 210, 1) 0%,
@@ -9,6 +10,7 @@
 	);
 	--wfm-transition: all 0.25s linear;
 	--wfm-btn-icon-size: 1.25rem;
+	--wfm-placeholder-color: #00000030;
 }
 
 .mt-n5 {
@@ -17,6 +19,18 @@
 
 .fw-bolder {
 	font-weight: 800 !important;
+}
+
+.bg-blur {
+	backdrop-filter: blur(20px);
+}
+
+.form-control {
+	--bs-border-radius: 0;
+	--bs-border-width: 0;
+	&:focus {
+		box-shadow: none;
+	}
 }
 
 /* Button */
@@ -40,7 +54,7 @@
 		top: auto;
 		transform: translateX(calc(var(--wfm-btn-icon-size) * -2));
 		opacity: 0;
-		visibility: 0;
+		visibility: hidden;
 		transition: var(--wfm-transition);
 	}
 	&:hover {
@@ -157,5 +171,28 @@
 
 	&.owl-carousel .owl-nav button.owl-prev {
 		transform: translateX(-3rem);
+	}
+}
+
+/* Newsletter section */
+.subscriber-form {
+	.form-control {
+		height: 3.5rem;
+		--bs-body-color: #00000050;
+		&::placeholder {
+			color: var(--wfm-placeholder-color);
+		}
+	}
+	.form-control[type='email'] {
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNSIgZmlsbD0ibm9uZSIgeG1sbnM6dj0iaHR0cHM6Ly92ZWN0YS5pby9uYW5vIj48cGF0aCBkPSJNMTguMzMzIDIuNUExLjY3IDEuNjcgMCAwIDAgMTYuNjY3LjgzM0gzLjMzM0ExLjY3IDEuNjcgMCAwIDAgMS42NjcgMi41bTE2LjY2NyAwdjEwYTEuNjcgMS42NyAwIDAgMS0xLjY2NyAxLjY2N0gzLjMzM0ExLjY3IDEuNjcgMCAwIDEgMS42NjcgMTIuNXYtMTBtMTYuNjY3IDBMMTAgOC4zMzMgMS42NjcgMi41IiBzdHJva2U9IiMxZTFlMWU1MCIgc3Ryb2tlLXdpZHRoPSIxLjY2NyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+');
+		background-repeat: no-repeat;
+		background-position: left 1rem center;
+	}
+	.btn {
+		height: 3.5rem;
+		font-size: 1.125rem;
+		img {
+			margin-top: 3px;
+		}
 	}
 }
