@@ -11,6 +11,10 @@
 	--wfm-btn-icon-size: 1.25rem;
 }
 
+.mt-n5 {
+	margin-top: -3rem !important;
+}
+
 .fw-bolder {
 	font-weight: 800 !important;
 }
@@ -107,5 +111,43 @@
 		p:nth-child(2) {
 			transform: translateY(-1.75rem);
 		}
+	}
+}
+
+/* Owl carousel */
+
+.owl-story {
+	.owl-nav {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: calc(50% - 4.5rem);
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&.owl-carousel .owl-nav button.owl-next,
+	&.owl-carousel .owl-nav button.owl-prev {
+		border: 1px solid #00000020;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
+		color: #00000020;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&.owl-carousel .owl-nav button span {
+		font-size: 2rem;
+		margin-top: -5px;
+	}
+
+	&.owl-carousel .owl-nav button.owl-next {
+		transform: translateX(3rem);
+	}
+
+	&.owl-carousel .owl-nav button.owl-prev {
+		transform: translateX(-3rem);
 	}
 }
