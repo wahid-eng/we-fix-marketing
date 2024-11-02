@@ -24,7 +24,7 @@ export default function Origin() {
 							helping you reach your goals.
 						</p>
 
-						<div className="pt-4">
+						<div className="pt-2">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />

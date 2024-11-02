@@ -26,7 +26,7 @@ export default function Guarantee() {
 							within 90 days, we will work for free until you do.
 						</p>
 						<p>We stand by our promise to help your business grow.</p>
-						<div className="pt-4">
+						<div className="pt-2">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />

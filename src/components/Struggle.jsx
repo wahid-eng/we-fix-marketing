@@ -23,7 +23,7 @@ export default function Struggle() {
 						<p className="fw-bold">YOU ARE NOT ALONE.</p>
 						<p>Many Local Businesses Face These Same Challenges Every Day.</p>
 
-						<div className="pt-4">
+						<div className="pt-2">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />

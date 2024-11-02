@@ -30,7 +30,7 @@ export default function Approach() {
 							Our proven strategies are designed to transform your marketing
 							Quickly and effectively.
 						</p>
-						<div className="pt-4">
+						<div className="pt-2">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />
