@@ -123,9 +123,8 @@
 	}
 }
 
-/* Owl carousel */
-
-.owl-story {
+/* Story carousel */
+.story-carousel {
 	.owl-nav {
 		position: absolute;
 		left: 0;

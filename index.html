@@ -39,21 +39,35 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script>
 			$(document).ready(function () {
-				$('.owl-story').owlCarousel({
-					loop: true,
-					margin: 20,
-					autoplay: true,
-					nav: true,
-					responsiveClass: true,
-					responsive: {
-						0: {
-							items: 1,
+				if ($('.service-carousel').length) {
+					$('.service-carousel').owlCarousel({
+						margin: 48,
+						loop: true,
+						autoWidth: true,
+						autoplay: true,
+						smartSpeed: 10000,
+						autoplaySpeed: 10000,
+						slideTransition: 'linear',
+					});
+				}
+
+				if ($('.story-carousel').length) {
+					$('.story-carousel').owlCarousel({
+						loop: true,
+						margin: 20,
+						autoplay: true,
+						nav: true,
+						responsiveClass: true,
+						responsive: {
+							0: {
+								items: 1,
+							},
+							768: {
+								items: 2,
+							},
 						},
-						768: {
-							items: 2,
-						},
-					},
-				});
+					});
+				}
 			});
 		</script>
 	</body>

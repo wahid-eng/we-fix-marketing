@@ -11,7 +11,7 @@ export default function Story() {
 				<div className="row">
 					<div className="col">
 						<div className="px-5 position-relative">
-							<div className="owl-carousel owl-story">
+							<div className="owl-carousel story-carousel">
 								<div>
 									<img
 										src="/images/story-1.webp"
