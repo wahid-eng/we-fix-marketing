@@ -89,7 +89,7 @@
 	--bs-btn-disabled-color: #fff;
 	--bs-btn-disabled-bg: #d97412;
 
-	background-image: url('images/btn-gradient-bg.png');
+	background-image: url('images/btn-gradient-bg.webp');
 	background-repeat: no-repeat;
 	background-position: -1px -1px;
 	position: relative;
