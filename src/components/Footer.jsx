@@ -98,13 +98,13 @@ export default function Footer() {
 			</div>
 			<hr className="m-0" />
 			<div className="container">
-				<div className="row row-cols-1 row-cols-lg-2 gap-3 gap-lg-0 py-4">
+				<div className="row flex-wrap-reverse row-cols-1 row-cols-lg-2 gap-3 gap-lg-0 py-4">
 					<div className="col">
 						<p className="m-0 text-center text-lg-start">
 							&copy; 2024 Wefixmarketing.Inc All rights reserved
 						</p>
 					</div>
-					<div className="col order-first order-lg-last">
+					<div className="col">
 						<ul className="m-0 list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-end column-gap-5 row-gap-3">
 							<li>
 								<a href="#" className="text-decoration-none text-white">
