@@ -103,6 +103,7 @@
 .section-heading {
 	p:first-child {
 		opacity: 0.05;
+		white-space: nowrap;
 	}
 }
 
@@ -110,6 +111,14 @@
 	.section-heading {
 		p:nth-child(2) {
 			transform: translateY(-1.75rem);
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-heading {
+		p:first-child {
+			font-size: 6rem;
 		}
 	}
 }

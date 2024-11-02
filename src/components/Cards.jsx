@@ -2,7 +2,7 @@ export default function Cards() {
 	return (
 		<section className="py-5">
 			<div className="container py-5">
-				<div className="row section-heading text-center fw-bolder">
+				<div className="row section-heading text-center">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">OUR PROCESS</p>
 						<p className="fw-bolder mb-5 display-5">NEXT STEPS</p>
