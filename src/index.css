@@ -5,6 +5,7 @@
 	--bs-danger-rgb: 255, 120, 54;
 	--bs-primary-rgb: 15, 140, 199;
 	--bs-warning-rgb: 231, 165, 0;
+	--bs-dark-rgb: 0, 0, 0;
 	--bs-gradient: linear-gradient(
 		315deg,
 		rgba(255, 227, 210, 1) 0%,
@@ -87,6 +88,10 @@ body {
 			transform: translateX(calc(var(--wfm-btn-icon-size) / 2));
 		}
 	}
+}
+
+.btn-close {
+	--bs-btn-close-focus-shadow: none;
 }
 
 .btn-black {
@@ -268,4 +273,16 @@ body {
 }
 .hero-title-secondary {
 	font-size: 10vw;
+}
+
+/* Header */
+header {
+	.offcanvas-body {
+		.nav-link {
+			transition: var(--wfm-transition);
+			&:hover {
+				font-weight: 800 !important;
+			}
+		}
+	}
 }
