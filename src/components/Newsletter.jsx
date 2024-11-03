@@ -24,9 +24,9 @@ export default function Newsletter() {
 								</p>
 							</div>
 							<div className="col">
-								<h6 className="text-white fw-bold mb-3">
+								<p className="text-white fw-bold mb-3 display-6">
 									Sign Up for our weekly marketing &apos;Fix&apos; newsletter
-								</h6>
+								</p>
 								<form method="POST" className="subscriber-form">
 									<div className="mb-3">
 										<input
@@ -37,6 +37,7 @@ export default function Newsletter() {
 										/>
 									</div>
 									<button
+										aria-label="Submit the form"
 										type="submit"
 										className="btn btn-black w-100 fw-bolder"
 									>

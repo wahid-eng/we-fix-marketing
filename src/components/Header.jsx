@@ -3,7 +3,7 @@ export default function Header() {
 		<header>
 			<nav className="navbar navbar-expand-xl fixed-top bg-white shadow-sm">
 				<div className="container">
-					<a className="navbar-brand" href="#">
+					<a className="navbar-brand" href="#" aria-label="WeFixMarketing logo">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="110"
@@ -71,6 +71,7 @@ export default function Header() {
 						data-bs-toggle="offcanvas"
 						data-bs-target="#navbarOffcanvas"
 						type="button"
+						aria-label="Open the menu"
 					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
@@ -96,6 +97,7 @@ export default function Header() {
 						type="button"
 						className="btn-close btn-close-white"
 						data-bs-dismiss="offcanvas"
+						aria-label="Close the menu"
 					></button>
 				</div>
 				<div className="offcanvas-body">

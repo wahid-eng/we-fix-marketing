@@ -18,8 +18,8 @@ export default function Footer() {
 							Follow us:
 						</h5>
 						<ul className="m-0 list-unstyled d-flex justify-content-center justify-content-md-end gap-4 gap-md-3">
-							<li title="Facebook">
-								<a href="#" className="text-decoration-none">
+							<li>
+								<a href="#" className="text-decoration-none" title="Facebook" aria-label="Facebook">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="11"
@@ -33,8 +33,8 @@ export default function Footer() {
 									</svg>
 								</a>
 							</li>
-							<li title="Instagram">
-								<a href="#" className="text-decoration-none">
+							<li>
+								<a href="#" className="text-decoration-none" title="Instagram" aria-label="Instagram">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="21"
@@ -48,8 +48,8 @@ export default function Footer() {
 									</svg>
 								</a>
 							</li>
-							<li title="LinkedIn">
-								<a href="#" className="text-decoration-none">
+							<li>
+								<a href="#" className="text-decoration-none" title="LinkedIn" aria-label="LinkedIn">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="21"
@@ -60,8 +60,8 @@ export default function Footer() {
 									</svg>
 								</a>
 							</li>
-							<li title="Youtube">
-								<a href="#" className="text-decoration-none">
+							<li>
+								<a href="#" className="text-decoration-none" title="Youtube" aria-label="Youtube">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="29"
@@ -75,8 +75,8 @@ export default function Footer() {
 									</svg>
 								</a>
 							</li>
-							<li title="X">
-								<a href="#" className="text-decoration-none">
+							<li>
+								<a href="#" className="text-decoration-none" title="X" aria-label="X">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="20"
