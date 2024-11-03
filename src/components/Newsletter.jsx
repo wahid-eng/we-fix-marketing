@@ -14,7 +14,7 @@ export default function Newsletter() {
 					</video>
 					<div className="p-5 position-relative z-1 bg-blur bg-black bg-opacity-25">
 						<div className="row row-gap-3 align-items-center">
-							<div className="col col-md-12 col-lg-7">
+							<div className="col-12 col-lg-7">
 								<p className="text-white display-6 fw-bolder">
 									READY TO
 									<br />
