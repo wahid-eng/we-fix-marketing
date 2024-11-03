@@ -23,37 +23,37 @@ export default function Header() {
 					<div className="collapse navbar-collapse" id="navbar">
 						<ul className="navbar-nav mx-auto gap-3">
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									THE<span className="d-xl-block"></span>STRUGGLE
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									THE<span className="d-xl-block"></span>SOLUTION
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									SUCCESS<span className="d-xl-block"></span>STORIES
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									OUR<span className="d-xl-block"></span>GUARANTEE
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									ORIGIN<span className="d-xl-block"></span>STORY
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									UNIQUE<span className="d-xl-block"></span>APPROACH
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium" href="#">
+								<a className="nav-link lh-1 fw-medium text-center" href="#">
 									NEXT<span className="d-xl-block"></span>STEP
 								</a>
 							</li>

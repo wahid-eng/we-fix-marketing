@@ -241,6 +241,10 @@ body {
 	--bs-navbar-padding-y: 1rem;
 }
 
+.navbar-nav {
+	--bs-navbar-color: #000000;
+}
+
 .navbar-toggler {
 	--bs-border-width: 0;
 	--bs-navbar-toggler-border-radius: 0;
