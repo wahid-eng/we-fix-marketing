@@ -1,14 +1,14 @@
 export default function Origin() {
 	return (
-		<section className="py-5">
+		<div className="py-5" id="origin_story">
 			<div className="container py-lg-5">
 				<div className="row section-heading text-center text-md-start mb-4 mb-md-0">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">ORIGIN STORY</p>
 					</div>
 				</div>
-				<div className="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
-					<div className="col">
+				<div className="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5">
+					<div className="col pt-md-4">
 						<p className="fw-bolder display-5">OUR ROOTS, OUR JOURNEY</p>
 						<p>
 							We started We Fix Marketing because we saw local businesses
@@ -24,7 +24,7 @@ export default function Origin() {
 							helping you reach your goals.
 						</p>
 
-						<div className="pt-2">
+						<div className="pt-2 text-center">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />
@@ -35,12 +35,12 @@ export default function Origin() {
 						<img
 							src="/images/origin-story.webp"
 							alt="Origin story"
-							className="w-100"
+							className="w-100 position-relative z-1 featured-image"
 							loading="lazy"
 						/>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

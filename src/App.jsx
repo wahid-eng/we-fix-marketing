@@ -1,5 +1,5 @@
 import Approach from './components/Approach';
-import Cards from './components/Cards';
+import Next from './components/Next';
 import Footer from './components/Footer';
 import Guarantee from './components/Guarantee';
 import Header from './components/Header';
@@ -23,7 +23,7 @@ export default function App() {
 			<Newsletter />
 			<Origin />
 			<Approach />
-			<Cards />
+			<Next />
 			<Footer />
 		</>
 	);

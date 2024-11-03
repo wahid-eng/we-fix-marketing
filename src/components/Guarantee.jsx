@@ -1,18 +1,18 @@
 export default function Guarantee() {
 	return (
-		<section className="bg-gradient py-5">
+		<div className="bg-gradient py-5" id="our_guarantee">
 			<div className="container pb-5 pt-lg-5">
 				<div className="row section-heading text-center text-md-end mb-4 mb-md-0">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">OUR GUARANTEE</p>
 					</div>
 				</div>
-				<div className="row row-cols-1 row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
+				<div className="row row-cols-1 row-cols-md-2 row-gap-5 gx-lg-5">
 					<div className="col">
 						<img
 							src="/images/guarantee.webp"
 							alt="Our guarantee"
-							className="w-100"
+							className="w-100 position-relative z-1 featured-image"
 							loading="lazy"
 						/>
 					</div>
@@ -26,7 +26,7 @@ export default function Guarantee() {
 							within 90 days, we will work for free until you do.
 						</p>
 						<p>We stand by our promise to help your business grow.</p>
-						<div className="pt-2">
+						<div className="pt-2 text-center">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />
@@ -35,6 +35,6 @@ export default function Guarantee() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

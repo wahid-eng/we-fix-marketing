@@ -1,6 +1,6 @@
 export default function Newsletter() {
 	return (
-		<section className="mt-n5">
+		<div id="newsletter">
 			<div className="container">
 				<div className="position-relative overflow-hidden">
 					<video
@@ -13,19 +13,19 @@ export default function Newsletter() {
 						Your browser does not support the video tag.
 					</video>
 					<div className="p-5 position-relative z-1 bg-blur bg-black bg-opacity-25">
-						<div className="row row-gap-3 align-items-center">
+						<div className="row align-items-center">
 							<div className="col-12 col-lg-7">
-								<p className="text-white display-6 fw-bolder">
+								<p className="text-white display-5 fw-bolder">
 									READY TO
 									<br />
 									SUPERCHARGE YOUR
 									<br />
-									LOCAL MARKETING
+									LOCAL MARKETING?
 								</p>
 							</div>
 							<div className="col">
-								<p className="text-white fw-bold mb-3 display-6">
-									Sign Up for our weekly marketing &apos;Fix&apos; newsletter
+								<p className="text-white fw-bold mb-3">
+									Sign up for the weekly WE FIX Marketing Newsletter
 								</p>
 								<form method="POST" className="subscriber-form">
 									<div className="mb-3">
@@ -50,6 +50,6 @@ export default function Newsletter() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

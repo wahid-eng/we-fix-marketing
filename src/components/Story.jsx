@@ -1,6 +1,6 @@
 export default function Story() {
 	return (
-		<section className="py-5">
+		<div className="py-5" id="success_stories">
 			<div className="container py-lg-5">
 				<div className="row section-heading text-center mb-4 mb-md-0">
 					<div className="col">
@@ -98,6 +98,6 @@ export default function Story() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

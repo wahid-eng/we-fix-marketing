@@ -1,6 +1,6 @@
 export default function Hero() {
 	return (
-		<section className="py-5">
+		<div className="py-5" id="hero">
 			<div className="container py-3">
 				<div className="row">
 					<div className="col text-center">
@@ -28,13 +28,15 @@ export default function Hero() {
 							<br /> &amp; SUPERCHARGED ROI,{' '}
 							<span className="text-warning">GUARANTEED!</span>
 						</p>
-						<a href="#" className="btn btn-gradient">
-							BOOK YOUR CALL
-							<img src="/images/arrow-right-up.svg" alt="Arrow" />
-						</a>
+						<div className="text-center">
+							<a href="#" className="btn btn-gradient">
+								BOOK YOUR CALL
+								<img src="/images/arrow-right-up.svg" alt="Arrow" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

@@ -3,7 +3,7 @@ export default function Header() {
 		<header>
 			<nav className="navbar navbar-expand-xl fixed-top bg-white shadow-sm">
 				<div className="container">
-					<a className="navbar-brand" href="#" aria-label="WeFixMarketing logo">
+					<a className="navbar-brand" href="/" aria-label="WeFixMarketing logo">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="110"
@@ -23,37 +23,58 @@ export default function Header() {
 					<div className="collapse navbar-collapse" id="navbarCollapse">
 						<ul className="navbar-nav mx-auto gap-3">
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#the_struggle"
+								>
 									THE<span className="d-xl-block"></span>STRUGGLE
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#the_solution"
+								>
 									THE<span className="d-xl-block"></span>SOLUTION
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#success_stories"
+								>
 									SUCCESS<span className="d-xl-block"></span>STORIES
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#our_guarantee"
+								>
 									OUR<span className="d-xl-block"></span>GUARANTEE
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#origin_story"
+								>
 									ORIGIN<span className="d-xl-block"></span>STORY
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#unique_approach"
+								>
 									UNIQUE<span className="d-xl-block"></span>APPROACH
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link lh-1 fw-medium text-center" href="#">
+								<a
+									className="nav-link lh-1 fw-medium text-center"
+									href="#next_step"
+								>
 									NEXT<span className="d-xl-block"></span>STEP
 								</a>
 							</li>
@@ -103,37 +124,58 @@ export default function Header() {
 				<div className="offcanvas-body">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#the_struggle"
+							>
 								THE STRUGGLE
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#the_solution"
+							>
 								THE SOLUTION
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#success_stories"
+							>
 								SUCCESS STORIES
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#our_guarantee"
+							>
 								OUR GUARANTEE
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#origin_story"
+							>
 								ORIGIN STORY
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#unique_approach"
+							>
 								UNIQUE APPROACH
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light py-3 fw-medium" href="#">
+							<a
+								className="nav-link link-light py-3 fw-medium"
+								href="#next_step"
+							>
 								NEXT STEP
 							</a>
 						</li>

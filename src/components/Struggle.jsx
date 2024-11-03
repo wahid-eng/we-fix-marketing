@@ -1,14 +1,14 @@
 export default function Struggle() {
 	return (
-		<section className="py-5">
+		<div className="py-5" id="the_struggle">
 			<div className="container py-lg-5">
 				<div className="row section-heading text-center text-md-start mb-4 mb-md-0">
 					<div className="col">
 						<p className="fw-bolder lh-1 mb-0 display-1">THE STRUGGLE</p>
 					</div>
 				</div>
-				<div className="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
-					<div className="col">
+				<div className="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5">
+					<div className="col pt-md-4">
 						<p className="fw-bolder display-5">
 							STRUGGLING WITH YOUR MARKETING?
 						</p>
@@ -23,7 +23,7 @@ export default function Struggle() {
 						<p className="fw-bold">YOU ARE NOT ALONE.</p>
 						<p>Many Local Businesses Face These Same Challenges Every Day.</p>
 
-						<div className="pt-2">
+						<div className="pt-2 text-center">
 							<a href="#" className="btn btn-gradient">
 								BOOK YOUR CALL
 								<img src="/images/arrow-right-up.svg" alt="Arrow" />
@@ -34,12 +34,12 @@ export default function Struggle() {
 						<img
 							src="/images/struggle.webp"
 							alt="Struggle"
-							className="w-100"
+							className="w-100 position-relative z-1 featured-image"
 							loading="lazy"
 						/>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }

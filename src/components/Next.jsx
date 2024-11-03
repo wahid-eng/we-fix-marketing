@@ -1,6 +1,6 @@
-export default function Cards() {
+export default function Next() {
 	return (
-		<section className="py-5">
+		<div className="py-5" id="next_step">
 			<div className="container py-lg-5">
 				<div className="row section-heading text-center">
 					<div className="col">
@@ -125,6 +125,6 @@ export default function Cards() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }
