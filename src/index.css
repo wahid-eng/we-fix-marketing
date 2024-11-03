@@ -2,6 +2,9 @@
 	--bs-font-sans-serif: 'Montserrat';
 	--bs-heading-color: #000000;
 	--bs-body-color: #000000;
+	--bs-danger-rgb: 255, 120, 54;
+	--bs-primary-rgb: 15, 140, 199;
+	--bs-warning-rgb: 231, 165, 0;
 	--bs-gradient: linear-gradient(
 		315deg,
 		rgba(255, 227, 210, 1) 0%,
@@ -35,6 +38,20 @@
 
 body {
 	padding-top: 5rem;
+}
+
+.blend-mode-screen {
+	mix-blend-mode: screen;
+}
+
+.display-6 {
+	font-size: calc(0.75rem + 1.5vw);
+}
+
+@media (min-width: 768px) {
+	.display-6 {
+		font-size: 2.5rem;
+	}
 }
 
 /* Button */
@@ -235,4 +252,16 @@ body {
 
 .nav-link {
 	--bs-nav-link-font-size: 1rem;
+}
+
+/* Hero section */
+.hero-title {
+	line-height: 0.75;
+	white-space: nowrap;
+}
+.hero-title-primary {
+	font-size: 17vw;
+}
+.hero-title-secondary {
+	font-size: 10vw;
 }
