@@ -1,555 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta -->
-		<meta charset="UTF-8">
-		<link rel="icon" href="public/favicon.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-		<!-- Title -->
-		<title>We Fix Marketing</title>
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-		<link rel="stylesheet" href="public/css/style.css">
-	</head>
-	<body>
-		<!-- Header start -->
-		<header>
-			<nav class="navbar navbar-expand-xl fixed-top bg-white shadow-sm">
-				<div class="container">
-					<a class="navbar-brand" href="#" aria-label="WeFixMarketing logo">
-						<svg xmlns="http://www.w3.org/2000/svg" width="110" height="38" fill="none">
-							<path d="M6.489 19.829L.277.417h6.738l5.019 16.389H8.652L13.976.417h6.018l4.964 16.389h-3.244L26.954.417h6.212l-6.212 19.411h-7.016L15.89 6.407h1.886l-4.271 13.422H6.489zm34.12-12.201h8.652v4.714h-8.652V7.627zm.444 7.265h9.706v4.936H34.619V.417h15.779v4.936h-9.345v9.539zm26.64-6.212h8.541v4.936h-8.541V8.681zm.444 11.148h-6.544V.417H77.37v4.936h-9.234v14.475zm11.302 0V.417h6.544v19.411h-6.544zm7.892 0l8.652-12.09-.028 4.576L87.579.417h7.349l4.881 7.21-3.134.028 4.769-7.238h7.044l-8.375 11.647V7.516l8.791 12.312h-7.487l-4.881-7.543 3.023-.028-4.77 7.57h-7.46z" fill="#000" />
-							<path d="M2.148 37.089V24.762h.757l5.723 9.879h-.405l5.706-9.879h.74l.018 12.327h-.88l-.018-10.971h.247l-5.406 9.333h-.44l-5.424-9.333h.264v10.971h-.88zm14.776 0l5.67-12.327h.898l5.67 12.327h-.968l-5.353-11.763h.387l-5.336 11.764h-.969zm2.078-3.469l.299-.757h7.379l.299.757h-7.977zm12.399 3.469V24.762h4.42c1.033 0 1.919.164 2.659.493s1.309.804 1.708 1.426c.399.611.599 1.356.599 2.236 0 .857-.2 1.597-.599 2.219-.399.61-.969 1.086-1.708 1.426-.74.329-1.626.493-2.659.493h-3.927l.405-.423v4.455h-.898zm8.558 0l-3.205-4.473h1.021l3.205 4.473h-1.021zm-7.66-4.403l-.405-.423h3.927c1.327 0 2.33-.294 3.011-.881.693-.587 1.039-1.409 1.039-2.465 0-1.068-.346-1.89-1.039-2.465-.681-.587-1.685-.881-3.011-.881h-3.927l.405-.44v7.555zm12.551 1.285l-.035-1.127 7.854-8.083h1.092l-5.494 5.688-.511.546-2.906 2.976zm-.775 3.117V24.762h.898v12.327h-.898zm8.963 0l-5.547-6.34.616-.652 6.023 6.991h-1.092zm4.211-6.657h6.674v.793H57.25v-.793zm.106 5.847h7.607v.81h-8.506V24.762h8.241v.81h-7.343v10.707zm13.242.81V25.572H66.16v-.81h9.773v.81h-4.438v11.517h-.898zm7.563 0V24.762h.898v12.327h-.898zm5.194 0V24.762h.757l8.787 11.218h-.405V24.762h.898v12.327h-.74l-8.805-11.218h.405v11.218h-.898zm19.608.088c-.928 0-1.785-.153-2.571-.458a6.39 6.39 0 0 1-2.061-1.321c-.575-.564-1.021-1.221-1.338-1.972-.317-.763-.475-1.597-.475-2.501s.159-1.732.475-2.483a5.82 5.82 0 0 1 1.356-1.99c.587-.564 1.268-.998 2.043-1.303.786-.317 1.649-.475 2.588-.475a7.11 7.11 0 0 1 2.483.423c.764.282 1.415.704 1.955 1.268l-.563.599c-.54-.528-1.133-.904-1.779-1.127-.634-.223-1.327-.335-2.078-.335-.798 0-1.538.135-2.219.405A5.32 5.32 0 0 0 99 27.051c-.505.493-.898 1.068-1.18 1.726-.27.657-.405 1.374-.405 2.148s.135 1.491.405 2.148c.282.657.675 1.233 1.18 1.726s1.097.875 1.778 1.145 1.421.405 2.219.405a6.26 6.26 0 0 0 2.06-.335c.658-.223 1.257-.593 1.797-1.109l.51.687c-.551.528-1.215.927-1.99 1.197a7.47 7.47 0 0 1-2.412.387zm3.539-1.673v-4.526h.863v4.614l-.863-.088z" fill="#686868" />
-						</svg>
-					</a>
-					<div class="collapse navbar-collapse" id="navbarCollapse">
-						<ul class="navbar-nav mx-auto gap-3">
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> THE <span class="d-xl-block"></span>STRUGGLE </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> THE <span class="d-xl-block"></span>SOLUTION </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> SUCCESS <span class="d-xl-block"></span>STORIES </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> OUR <span class="d-xl-block"></span>GUARANTEE </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> ORIGIN <span class="d-xl-block"></span>STORY </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> UNIQUE <span class="d-xl-block"></span>APPROACH </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link lh-1 fw-medium text-center" href="#"> NEXT <span class="d-xl-block"></span>STEP </a>
-							</li>
-						</ul>
-					</div>
-					<a href="#" class="btn btn-black ms-auto me-2 me-xl-0 d-none d-sm-block"> GET IN TOUCH <img src="public/images/arrow-right-up.svg" alt="Arrow">
-					</a>
-					<button class="navbar-toggler pe-0" aria-label="Open the menu" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" type="button">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
-			</nav>
-			<div class="offcanvas offcanvas-start text-bg-dark" id="navbarOffcanvas">
-				<div class="offcanvas-header">
-					<a href="#" class="offcanvas-title">
-						<svg xmlns="http://www.w3.org/2000/svg" width="150" height="51" fill="#fff">
-							<path d="M8.853 26.574L.378.091h9.194l6.848 22.36h-4.616L19.068.091h8.21l6.772 22.36h-4.427l7.15-22.36h8.475l-8.475 26.483h-9.572L21.679 8.263h2.573l-5.826 18.311H8.853zm46.55-16.647h11.804v6.432H55.404V9.927zm.605 9.912H69.25v6.734H47.232V.091h21.527v6.734h-12.75V19.84zm36.345-8.475h11.652v6.734H92.354v-6.734zm.605 15.209H84.03V.091h21.528v6.734H92.959v19.749zm15.419 0V.091h8.929v26.483h-8.929zm10.768 0l11.804-16.495-.038 6.243L119.486.091h10.026l6.659 9.837-4.275.038 6.507-9.875h9.61l-11.426 15.89V9.776l11.993 16.798h-10.215l-6.658-10.291 4.123-.038-6.507 10.329h-10.177zM2.931 50.751V33.933h1.033l7.808 13.479h-.553l7.784-13.479h1.009l.024 16.818h-1.201l-.024-14.968h.336l-7.376 12.734h-.601l-7.4-12.734h.36v14.968H2.931zm20.159 0l7.736-16.818h1.225l7.736 16.818h-1.321l-7.304-16.049h.529l-7.28 16.049H23.09zm2.835-4.733l.408-1.033H36.4l.408 1.033H25.925zm16.916 4.733V33.933h6.03c1.41 0 2.619.224 3.628.673s1.786 1.097 2.331 1.946c.545.833.817 1.85.817 3.051 0 1.169-.272 2.178-.817 3.027-.545.833-1.321 1.482-2.331 1.946-1.009.448-2.218.673-3.628.673h-5.358l.553-.577v6.079h-1.225zm11.676 0l-4.373-6.103h1.393l4.373 6.103h-1.394zm-10.451-6.006l-.553-.577h5.358c1.81 0 3.179-.4 4.108-1.201.945-.801 1.417-1.922 1.417-3.364 0-1.458-.472-2.579-1.417-3.364-.929-.801-2.298-1.201-4.108-1.201h-5.358l.553-.601v10.307zm17.124 1.754l-.048-1.538 10.715-11.028h1.49l-7.496 7.76-.697.745-3.964 4.06zm-1.057 4.253V33.933h1.225v16.818h-1.225zm12.229 0l-7.568-8.649.841-.889 8.217 9.538h-1.49zm5.745-9.082h9.106v1.081h-9.106V41.67zm.144 7.977H88.63v1.105H77.026V33.933H88.27v1.105H78.252v14.608zm18.066 1.105V35.038h-6.055v-1.105h13.335v1.105h-6.055v15.713h-1.225zm10.318 0V33.933h1.226v16.818h-1.226zm7.086 0V33.933h1.033l11.989 15.305h-.553V33.933h1.226v16.818h-1.009l-12.013-15.304h.552v15.304h-1.225zm26.752.12c-1.266 0-2.435-.208-3.508-.625-1.073-.432-2.01-1.033-2.811-1.802a8.17 8.17 0 0 1-1.826-2.691c-.433-1.041-.649-2.178-.649-3.412s.216-2.363.649-3.388a7.94 7.94 0 0 1 1.85-2.715 8.46 8.46 0 0 1 2.787-1.778c1.073-.432 2.25-.649 3.532-.649 1.217 0 2.346.192 3.387.577s1.93.961 2.667 1.73l-.769.817c-.736-.721-1.545-1.233-2.426-1.538-.865-.304-1.81-.456-2.835-.456-1.089 0-2.099.184-3.028.553a7.27 7.27 0 0 0-2.426 1.562 7.26 7.26 0 0 0-1.61 2.355c-.368.897-.552 1.874-.552 2.931s.184 2.034.552 2.931a7.26 7.26 0 0 0 1.61 2.355 7.27 7.27 0 0 0 2.426 1.562c.929.369 1.939.553 3.028.553a8.55 8.55 0 0 0 2.811-.456c.897-.304 1.714-.809 2.45-1.514l.697.937c-.753.721-1.658 1.265-2.715 1.634-1.041.352-2.138.529-3.291.529zm4.829-2.282v-6.175h1.177v6.295l-1.177-.12z" />
-						</svg>
-					</a>
-					<button type="button" aria-label="Close the menu" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> THE STRUGGLE </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> THE SOLUTION </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> SUCCESS STORIES </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> OUR GUARANTEE </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> ORIGIN STORY </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> UNIQUE APPROACH </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link-light py-3 fw-medium" href="#"> NEXT STEP </a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
-		<!-- Header end -->
-		<!-- Hero start -->
-		<div class="py-5">
-			<div class="container py-3">
-				<div class="row">
-					<div class="col text-center">
-						<div class="position-relative overflow-hidden">
-							<video class="position-absolute top-0 start-0 w-100 h-100 m-0 object-fit-cover" autoplay muted loop>
-								<source src="public/videos/wefix.mp4" type="video/mp4"> Your browser does not support the video tag.
-							</video>
-							<p class="fw-bolder hero-title hero-title-primary mb-0 bg-white position-relative start-0 w-100 top-0 h-100 blend-mode-screen"> WE FIX </p>
-						</div>
-						<p class="hero-title hero-title-secondary fw-lighter mb-4 mt-2"> MARKETING </p>
-						<p class="display-6 fw-bolder mb-4"> EASIEST WAY TO GET <span class="text-danger">BETTER LEADS</span>, <span class="text-primary">MORE CUSTOMERS</span>
-							<br> &amp; SUPERCHARGED ROI, <span class="text-warning">GUARANTEED!</span>
-						</p>
-						<a href="#" class="btn btn-gradient"> BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Hero end -->
-		<!-- Service start -->
-		<div class="owl-carousel service-carousel bg-black text-white py-2 py-lg-3">
-			<div class="item">
-				<div class="d-flex gap-5">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" fill="none">
-						<path d="M12.779.4l1.974 6.702L20.29 2.84l-2.342 6.583 6.984-.193-5.764 3.949 5.764 3.949-6.984-.193 2.342 6.583-5.537-4.262-1.974 6.702-1.974-6.702-5.537 4.262 2.342-6.582-6.984.193 5.764-3.949L.625 9.23l6.984.193L5.268 2.84l5.537 4.262L12.779.4z" fill="#ff7836" />
-					</svg>
-					<a href="#" class="text-decoration-none text-white fw-bold"> WEBSITE MAKEOVERS </a>
-				</div>
-			</div>
-			<div class="item">
-				<div class="d-flex gap-5">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" fill="none">
-						<path d="M12.779.4l1.974 6.702L20.29 2.84l-2.342 6.583 6.984-.193-5.764 3.949 5.764 3.949-6.984-.193 2.342 6.583-5.537-4.262-1.974 6.702-1.974-6.702-5.537 4.262 2.342-6.582-6.984.193 5.764-3.949L.625 9.23l6.984.193L5.268 2.84l5.537 4.262L12.779.4z" fill="#0F8CC7" />
-					</svg>
-					<a href="#" class="text-decoration-none text-white fw-bold"> REPUTATION MANAGEMENT </a>
-				</div>
-			</div>
-			<div class="item">
-				<div class="d-flex gap-5">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" fill="none">
-						<path d="M12.779.4l1.974 6.702L20.29 2.84l-2.342 6.583 6.984-.193-5.764 3.949 5.764 3.949-6.984-.193 2.342 6.583-5.537-4.262-1.974 6.702-1.974-6.702-5.537 4.262 2.342-6.582-6.984.193 5.764-3.949L.625 9.23l6.984.193L5.268 2.84l5.537 4.262L12.779.4z" fill="#E7A500" />
-					</svg>
-					<a href="#" class="text-decoration-none text-white fw-bold"> SOCIAL MEDIA MANAGEMENT </a>
-				</div>
-			</div>
-			<div class="item">
-				<div class="d-flex gap-5">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" fill="none">
-						<path d="M12.779.4l1.974 6.702L20.29 2.84l-2.342 6.583 6.984-.193-5.764 3.949 5.764 3.949-6.984-.193 2.342 6.583-5.537-4.262-1.974 6.702-1.974-6.702-5.537 4.262 2.342-6.582-6.984.193 5.764-3.949L.625 9.23l6.984.193L5.268 2.84l5.537 4.262L12.779.4z" fill="#FC4796" />
-					</svg>
-					<a href="#" class="text-decoration-none text-white fw-bold"> PPC ADVERTISING </a>
-				</div>
-			</div>
-			<div class="item">
-				<div class="d-flex gap-5">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" fill="none">
-						<path d="M12.779.4l1.974 6.702L20.29 2.84l-2.342 6.583 6.984-.193-5.764 3.949 5.764 3.949-6.984-.193 2.342 6.583-5.537-4.262-1.974 6.702-1.974-6.702-5.537 4.262 2.342-6.582-6.984.193 5.764-3.949L.625 9.23l6.984.193L5.268 2.84l5.537 4.262L12.779.4z" fill="#9747fc" />
-					</svg>
-					<a href="#" class="text-decoration-none text-white fw-bold"> SEO </a>
-				</div>
-			</div>
-		</div>
-		<!-- Service end -->
-		<!-- Struggle start -->
-		<div class="py-5">
-			<div class="container py-lg-5">
-				<div class="row section-heading text-center text-md-start mb-4 mb-md-0">
-					<div class="col">
-						<p class="fw-bolder lh-1 mb-0 display-1">THE STRUGGLE</p>
-					</div>
-				</div>
-				<div class="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
-					<div class="col">
-						<p class="fw-bolder display-5">STRUGGLING WITH YOUR MARKETING?</p>
-						<p> Do You Feel Ike Your Marketing Efforts Arent Bringing In Enough Customers? </p>
-						<p> Are You Spending Money On Ads But Not Seeing Results? Is Your Business Not Growing As Fast As You would Like? </p>
-						<p class="fw-bold">YOU ARE NOT ALONE.</p>
-						<p>Many Local Businesses Face These Same Challenges Every Day.</p>
-						<div class="pt-2">
-							<a href="#" class="btn btn-gradient"> BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
-							</a>
-						</div>
-					</div>
-					<div class="col">
-						<img src="public/images/struggle.webp" alt="Struggle" class="w-100" loading="lazy">
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Struggle end -->
-		<!-- Solution start -->
-		<div class="bg-gradient py-5">
-			<div class="container py-lg-5">
-				<div class="row row-cols-1 row-cols-lg-2 mb-4 mb-lg-0 align-items-center">
-					<div class="col section-heading text-center text-md-start">
-						<p class="fw-bolder lh-1 mb-0 display-1">THE SOLUTION</p>
-						<p class="fw-bolder mb-4 mb-md-0 mb-lg-5 display-5"> WE HAVE SOLUTIONS <br> FOR YOUR MARKETING! </p>
-					</div>
-					<div class="col">
-						<p class="m-0"> We Started We Fix Marketing Because We Saw Local Businesses Struggling To Attract Customers. Our Mission Is To Help Businesses. Like Yours Succeed By Making Marketing Simple And Effective. </p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="public/images/solution.webp" alt="The solution" class="w-100" loading="lazy">
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Solution end -->
-		<!-- Story start -->
-		<div class="py-5">
-			<div class="container py-lg-5">
-				<div class="row section-heading text-center mb-4 mb-md-0">
-					<div class="col">
-						<p class="fw-bolder lh-1 mb-0 display-1">SUCCESS STORIES</p>
-						<p class="fw-bolder mb-4 display-5">OUR SUCCESS STORIES</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="px-5 position-relative">
-							<div class="owl-carousel story-carousel">
-								<div>
-									<img src="public/images/story-1.webp" class="d-block w-100" alt="Story">
-									<div class="bg-white position-relative p-4 mx-4 mt-n5">
-										<h4 class="fw-bold">Local Bakery Sees Sweet Success</h4>
-										<p class="m-0"> We helped &ldquo;Sweet Treats Bakery&ldquo; increase their sales by <strong>50%</strong> in just <strong>one month</strong>. By creating targeted online ads and a new sales funnel, they now have more customers than ever. </p>
-									</div>
-								</div>
-								<div>
-									<img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
-									<div class="bg-white position-relative p-4 mx-4 mt-n5">
-										<h4 class="fw-bold">Hardware store build traffic</h4>
-										<p class="m-0"> Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
-									</div>
-								</div>
-								<div>
-									<img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
-									<div class="bg-white position-relative p-4 mx-4 mt-n5">
-										<h4 class="fw-bold">Hardware store build traffic</h4>
-										<p class="m-0"> Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
-									</div>
-								</div>
-								<div>
-									<img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
-									<div class="bg-white position-relative p-4 mx-4 mt-n5">
-										<h4 class="fw-bold">Hardware store build traffic</h4>
-										<p class="m-0"> Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
-									</div>
-								</div>
-								<div>
-									<img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
-									<div class="bg-white position-relative p-4 mx-4 mt-n5">
-										<h4 class="fw-bold">Hardware store build traffic</h4>
-										<p class="m-0"> Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Story end -->
-		<!-- Guarantee start -->
-		<div class="bg-gradient py-5">
-			<div class="container pb-5 pt-lg-5">
-				<div class="row section-heading text-center text-md-end mb-4 mb-md-0">
-					<div class="col">
-						<p class="fw-bolder lh-1 mb-0 display-1">OUR GUARANTEE</p>
-					</div>
-				</div>
-				<div class="row row-cols-1 row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
-					<div class="col">
-						<img src="public/images/guarantee.webp" alt="Our guarantee" class="w-100" loading="lazy">
-					</div>
-					<div class="col">
-						<p class="fw-bolder display-5">WE OFFER THE GUARANTEE!</p>
-						<p> We are so confident in our services that we offer this guarantee: </p>
-						<p class="fw-bold"> If you do not see better leads, more sales, and a higher ROI within 90 days, we will work for free until you do. </p>
-						<p>We stand by our promise to help your business grow.</p>
-						<div class="pt-2">
-							<a href="#" class="btn btn-gradient"> BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Guarantee end -->
-		<!-- Newsletter start -->
-		<div class="mt-n5">
-			<div class="container">
-				<div class="position-relative overflow-hidden">
-					<video class="w-100 position-absolute top-50 start-50 translate-middle" autoplay muted loop>
-						<source src="public/videos/wefix.mp4" type="video/mp4"> Your browser does not support the video tag.
-					</video>
-					<div class="p-5 position-relative z-1 bg-blur bg-black bg-opacity-25">
-						<div class="row row-gap-3 align-items-center">
-							<div class="col-12 col-lg-7">
-								<p class="text-white display-6 fw-bolder"> READY TO <br> SUPERCHARGE YOUR <br> LOCAL MARKETING </p>
-							</div>
-							<div class="col">
-								<p class="text-white fw-bold mb-3 display-6"> Sign Up for our weekly marketing &apos;Fix&apos; newsletter </p>
-								<form method="POST" class="subscriber-form">
-									<div class="mb-3">
-										<input type="email" class="form-control ps-5" placeholder="Enter Email Address" required>
-									</div>
-									<button type="submit" aria-label="Submit the form" class="btn btn-black w-100 fw-bolder"> SIGN UP NOW <img src="public/images/arrow-right-up.svg" alt="Arrow">
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Newsletter end -->
-		<!-- Origin start -->
-		<div class="py-5">
-			<div class="container py-lg-5">
-				<div class="row section-heading text-center text-md-start mb-4 mb-md-0">
-					<div class="col">
-						<p class="fw-bolder lh-1 mb-0 display-1">ORIGIN STORY</p>
-					</div>
-				</div>
-				<div class="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
-					<div class="col">
-						<p class="fw-bolder display-5">OUR ROOTS, OUR JOURNEY</p>
-						<p> We started We Fix Marketing because we saw local businesses struggling to attract customers. </p>
-						<p class="fw-bold"> Our mission is to help businesses. like yours succeed by making marketing simple & effective. </p>
-						<p> With years of experience in sales funnels, pay-per-click advertising, & search engine optimization, we are dedicated to helping you reach your goals. </p>
-						<div class="pt-2">
-							<a href="#" class="btn btn-gradient"> BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
-							</a>
-						</div>
-					</div>
-					<div class="col">
-						<img src="public/images/origin-story.webp" alt="Origin story" class="w-100" loading="lazy">
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Origin end -->
-		<!-- Approach start -->
-		<div class="bg-gradient py-5">
-			<div class="container py-lg-5">
-				<div class="row section-heading text-center text-md-end mb-4 mb-md-0">
-					<div class="col">
-						<p class="fw-bolder lh-1 mb-0 display-1">OUR APPROACH</p>
-					</div>
-				</div>
-				<div class="row row-cols-1 row-cols-md-2 row-gap-5 gx-lg-5 align-items-center">
-					<div class="col">
-						<img src="public/images/our-approach.webp" alt="Our approach" class="w-100" loading="lazy">
-					</div>
-					<div class="col">
-						<p class="fw-bolder display-5">WHAT MAKES US DIFFERENT</p>
-						<p> At We Fix Marketing, we specialize in helping local businesses like yours. </p>
-						<p> We help you attract better leads, make more sales, and get a higher return on your marketing investment-all with less stress. </p>
-						<p class="fw-bold"> Our proven strategies are designed to transform your marketing Quickly and effectively. </p>
-						<div class="pt-2">
-							<a href="#" class="btn btn-gradient"> BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Approach end -->
-		<!-- Process start -->
-		<div class="py-5">
-			<div class="container py-lg-5">
-				<div class="row section-heading text-center">
-					<div class="col">
-						<p class="fw-bolder lh-1 mb-0 display-1">OUR PROCESS</p>
-						<p class="fw-bolder mb-4 display-5">NEXT STEPS</p>
-					</div>
-				</div>
-				<div class="row row-cols-1 row-cols-md-3 gap-3 gap-md-0">
-					<div class="col">
-						<div class="card bg-gradient h-100">
-							<div class="card-body">
-								<div class="card-icon mb-4">
-									<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M43.5036 14.7921L31.6432 2.93175C31.5442 2.8293 31.4252 2.74829 31.2936 2.69374C31.1619 2.6392 31.0205 2.61227 30.8781 2.61465H11.5058C10.3576 2.61465 9.25654 3.07074 8.44469 3.88258C7.63285 4.69443 7.17676 5.79553 7.17676 6.94365V43.9566C7.17676 45.1048 7.63285 46.2059 8.44469 47.0177C9.25654 47.8296 10.3576 48.2856 11.5058 48.2856H39.4917C40.6398 48.2856 41.7409 47.8296 42.5528 47.0177C43.3646 46.2059 43.8207 45.1048 43.8207 43.9566V15.5573C43.8198 15.2704 43.7059 14.9955 43.5036 14.7921ZM40.1259 14.475H33.5837C33.1531 14.475 32.7402 14.304 32.4358 13.9996C32.1313 13.6951 31.9603 13.2822 31.9603 12.8517V6.30945L40.1259 14.475ZM39.4917 46.1211H11.509C10.9349 46.1211 10.3844 45.8931 9.97848 45.4872C9.57255 45.0813 9.34451 44.5307 9.34451 43.9566V6.94365C9.34451 6.36959 9.57255 5.81904 9.97848 5.41312C10.3844 5.00719 10.9349 4.77915 11.509 4.77915H29.7991V12.8517C29.7991 13.8563 30.1981 14.8197 30.9085 15.5301C31.6189 16.2405 32.5823 16.6395 33.5869 16.6395H41.6594V43.9566C41.6594 44.2412 41.6034 44.5229 41.4944 44.7857C41.3854 45.0485 41.2257 45.2873 41.0243 45.4883C40.823 45.6894 40.584 45.8487 40.321 45.9573C40.058 46.0659 39.7762 46.1216 39.4917 46.1211Z" fill="black" />
-										<path d="M21.1526 19.2814C22.0195 19.2814 22.867 19.0243 23.5878 18.5427C24.3086 18.0611 24.8704 17.3765 25.2021 16.5756C25.5339 15.7747 25.6207 14.8934 25.4515 14.0432C25.2824 13.1929 24.865 12.4119 24.252 11.7989C23.639 11.1859 22.858 10.7685 22.0078 10.5994C21.1575 10.4302 20.2762 10.517 19.4753 10.8488C18.6744 11.1805 17.9898 11.7423 17.5082 12.4631C17.0266 13.1839 16.7695 14.0314 16.7695 14.8983C16.771 16.0603 17.2332 17.1743 18.0549 17.996C18.8766 18.8177 19.9906 19.2799 21.1526 19.2814ZM21.1526 12.6796C21.5914 12.6796 22.0204 12.8098 22.3852 13.0535C22.7501 13.2973 23.0345 13.6438 23.2024 14.0492C23.3703 14.4546 23.4142 14.9007 23.3286 15.3311C23.243 15.7615 23.0317 16.1568 22.7214 16.4671C22.4112 16.7773 22.0158 16.9886 21.5855 17.0742C21.1551 17.1598 20.709 17.1159 20.3036 16.948C19.8982 16.7801 19.5517 16.4957 19.3079 16.1309C19.0642 15.766 18.934 15.3371 18.934 14.8983C18.9349 14.3101 19.1689 13.7463 19.5848 13.3304C20.0007 12.9145 20.5645 12.6805 21.1526 12.6796Z" fill="#FF7836" />
-										<path d="M14.8098 27.6687C15.0968 27.6687 15.3721 27.5547 15.5751 27.3517C15.778 27.1488 15.892 26.8735 15.892 26.5865V25.9263C15.8935 24.863 16.3165 23.8437 17.0684 23.0918C17.8202 22.3399 18.8396 21.9169 19.9029 21.9155H22.4029C23.4662 21.9169 24.4855 22.3399 25.2374 23.0918C25.9892 23.8437 26.4123 24.863 26.4137 25.9263V26.5865C26.4137 26.8735 26.5277 27.1488 26.7307 27.3517C26.9336 27.5547 27.2089 27.6687 27.4959 27.6687C27.783 27.6687 28.0582 27.5547 28.2612 27.3517C28.4642 27.1488 28.5782 26.8735 28.5782 26.5865V25.9263C28.5762 24.2891 27.9249 22.7196 26.7673 21.5619C25.6096 20.4042 24.04 19.753 22.4029 19.751H19.9029C18.2657 19.753 16.6961 20.4042 15.5385 21.5619C14.3808 22.7196 13.7295 24.2891 13.7275 25.9263V26.5865C13.7275 26.8735 13.8416 27.1488 14.0445 27.3517C14.2475 27.5547 14.5228 27.6687 14.8098 27.6687Z" fill="#FF7836" />
-										<path d="M14.2063 35.5876H27.3394C27.6264 35.5876 27.9017 35.4736 28.1047 35.2706C28.3076 35.0676 28.4216 34.7924 28.4216 34.5053C28.4216 34.2183 28.3076 33.943 28.1047 33.7401C27.9017 33.5371 27.6264 33.4231 27.3394 33.4231H14.2063C13.9192 33.4231 13.644 33.5371 13.441 33.7401C13.238 33.943 13.124 34.2183 13.124 34.5053C13.124 34.7924 13.238 35.0676 13.441 35.2706C13.644 35.4736 13.9192 35.5876 14.2063 35.5876Z" fill="#FF7836" />
-										<path d="M34.769 39.1223H14.2063C13.9192 39.1223 13.644 39.2363 13.441 39.4393C13.238 39.6423 13.124 39.9175 13.124 40.2046C13.124 40.4916 13.238 40.7669 13.441 40.9698C13.644 41.1728 13.9192 41.2868 14.2063 41.2868H34.769C35.0561 41.2868 35.3314 41.1728 35.5343 40.9698C35.7373 40.7669 35.8513 40.4916 35.8513 40.2046C35.8513 39.9175 35.7373 39.6423 35.5343 39.4393C35.3314 39.2363 35.0561 39.1223 34.769 39.1223Z" fill="#FF7836" />
-									</svg>
-								</div>
-								<h5 class="card-title fw-bold">YOUR GOALS &amp; CHALLENGES</h5>
-								<p class="card-text fw-medium"> We will discuss your business goals and challenges </p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card bg-gradient h-100">
-							<div class="card-body">
-								<div class="card-icon mb-4">
-									<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M39.5598 8.64801L35.0261 4.11285C34.0037 3.07082 32.6242 2.49707 31.142 2.49707H10.3154C7.29199 2.49707 4.83105 4.95801 4.83105 7.98144V38.9189C4.83105 41.9424 7.29199 44.4033 10.3154 44.4033H35.6842C38.7076 44.4033 41.1686 41.9494 41.1686 38.9316V12.5236C41.1686 11.0428 40.5948 9.66332 39.5598 8.64801ZM33.2289 5.89598L37.7795 10.4466C38.3336 10.9894 38.6373 11.7277 38.6373 12.525V12.9497H32.2754C31.4233 12.9497 30.7286 12.2564 30.7286 11.4028V5.02832H31.142C31.9379 5.02832 32.6762 5.33348 33.2289 5.89598ZM35.6842 41.8721H10.3154C8.68699 41.8721 7.36231 40.5488 7.36231 38.9189V7.98144C7.36231 6.35301 8.68699 5.02832 10.3154 5.02832H28.1973V11.4014C28.1973 13.65 30.0268 15.4796 32.2754 15.4796H38.6373V38.933C38.6373 40.553 37.3126 41.8721 35.6842 41.8721Z" fill="black" />
-										<path d="M31.9125 20.5139H14.0869C13.388 20.5139 12.8213 21.0806 12.8213 21.7795C12.8213 22.4784 13.388 23.0452 14.0869 23.0452H31.9125C32.6114 23.0452 33.1782 22.4784 33.1782 21.7795C33.1782 21.0806 32.6114 20.5139 31.9125 20.5139Z" fill="#FF7836" />
-										<path d="M31.9125 25.7607H14.0869C13.388 25.7607 12.8213 26.3275 12.8213 27.0264C12.8213 27.7253 13.388 28.292 14.0869 28.292H31.9125C32.6114 28.292 33.1782 27.7253 33.1782 27.0264C33.1782 26.3275 32.6114 25.7607 31.9125 25.7607Z" fill="#FF7836" />
-										<path d="M31.9122 34.3064H27.626C26.9271 34.3064 26.3604 34.8731 26.3604 35.572C26.3604 36.2709 26.9271 36.8376 27.626 36.8376H31.9122C32.6111 36.8376 33.1779 36.2709 33.1779 35.572C33.1779 34.8731 32.6111 34.3064 31.9122 34.3064Z" fill="#FF7836" />
-									</svg>
-								</div>
-								<h5 class="card-title fw-bold">GET A CUSTOM PLAN</h5>
-								<p class="card-text fw-medium"> We will create a marketing strategy tailored just for you </p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card bg-gradient h-100">
-							<div class="card-body">
-								<div class="card-icon mb-4">
-									<svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1.43857 21.4502C1.48121 21.4501 1.5238 21.4473 1.56607 21.4418C8.45288 20.5073 15.1697 18.588 21.5104 15.7427C27.9138 12.8617 33.8632 9.06304 39.1711 4.46644L38.0292 9.03582C37.9691 9.27687 38.0071 9.53193 38.1349 9.74498C38.2627 9.95802 38.4698 10.1116 38.7108 10.1721C38.7853 10.1905 38.8618 10.2 38.9386 10.2002C39.1475 10.1999 39.3504 10.1299 39.515 10.0011C39.6796 9.87236 39.7964 9.69232 39.847 9.48957L41.722 1.98957C41.7565 1.85148 41.759 1.70735 41.7295 1.56813C41.6999 1.4289 41.6391 1.29823 41.5515 1.18601C41.464 1.0738 41.352 0.982993 41.2242 0.920477C41.0963 0.857961 40.9559 0.825377 40.8136 0.825195H33.3136C33.0649 0.825195 32.8265 0.923967 32.6507 1.09978C32.4748 1.2756 32.3761 1.51405 32.3761 1.7627C32.3761 2.01134 32.4748 2.24979 32.6507 2.42561C32.8265 2.60142 33.0649 2.7002 33.3136 2.7002H38.347C33.0753 7.33291 27.1415 11.1525 20.7417 14.0327C14.5646 16.8044 8.02109 18.6738 1.31201 19.5836C1.0763 19.6155 0.86151 19.7357 0.711138 19.92C0.560766 20.1043 0.486059 20.3388 0.502149 20.5761C0.518239 20.8134 0.623924 21.0357 0.797796 21.198C0.971667 21.3603 1.20073 21.4505 1.43857 21.4502Z" fill="#FF7836" />
-										<path d="M40.8135 40.2002H39.876V14.8877C39.876 14.6391 39.7772 14.4006 39.6014 14.2248C39.4256 14.049 39.1871 13.9502 38.9385 13.9502H29.5635C29.3148 13.9502 29.0764 14.049 28.9006 14.2248C28.7247 14.4006 28.626 14.6391 28.626 14.8877V40.2002H26.751V20.5127C26.751 20.2641 26.6522 20.0256 26.4764 19.8498C26.3006 19.674 26.0621 19.5752 25.8135 19.5752H16.4385C16.1898 19.5752 15.9514 19.674 15.7756 19.8498C15.5997 20.0256 15.501 20.2641 15.501 20.5127V40.2002H13.626V26.1377C13.626 25.8891 13.5272 25.6506 13.3514 25.4748C13.1756 25.299 12.9371 25.2002 12.6885 25.2002H3.31348C3.06484 25.2002 2.82638 25.299 2.65056 25.4748C2.47475 25.6506 2.37598 25.8891 2.37598 26.1377V40.2002H1.43848C1.18984 40.2002 0.951379 40.299 0.775564 40.4748C0.599749 40.6506 0.500977 40.8891 0.500977 41.1377C0.500977 41.3863 0.599749 41.6248 0.775564 41.8006C0.951379 41.9764 1.18984 42.0752 1.43848 42.0752H40.8135C41.0621 42.0752 41.3006 41.9764 41.4764 41.8006C41.6522 41.6248 41.751 41.3863 41.751 41.1377C41.751 40.8891 41.6522 40.6506 41.4764 40.4748C41.3006 40.299 41.0621 40.2002 40.8135 40.2002ZM30.501 15.8252H38.001V40.2002H30.501V15.8252ZM17.376 21.4502H24.876V40.2002H17.376V21.4502ZM4.25098 27.0752H11.751V40.2002H4.25098V27.0752Z" fill="black" />
-									</svg>
-								</div>
-								<h5 class="card-title fw-bold">SEE REAL RESULTS</h5>
-								<p class="card-text fw-medium"> Watch your business grow with better leads, more sales </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row text-center mt-5">
-					<div class="col">
-						<a href="#" class="btn btn-gradient"> BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Process end -->
-		<!-- Footer start -->
-		<footer class="bg-black text-white">
-			<div class="container">
-				<div class="row row-cols-1 row-cols-md-2 py-5">
-					<div class="col text-center text-md-start">
-						<svg xmlns="http://www.w3.org/2000/svg" width="150" height="51" fill="#fff">
-							<path d="M8.853 26.574L.378.091h9.194l6.848 22.36h-4.616L19.068.091h8.21l6.772 22.36h-4.427l7.15-22.36h8.475l-8.475 26.483h-9.572L21.679 8.263h2.573l-5.826 18.311H8.853zm46.55-16.647h11.804v6.432H55.404V9.927zm.605 9.912H69.25v6.734H47.232V.091h21.527v6.734h-12.75V19.84zm36.345-8.475h11.652v6.734H92.354v-6.734zm.605 15.209H84.03V.091h21.528v6.734H92.959v19.749zm15.419 0V.091h8.929v26.483h-8.929zm10.768 0l11.804-16.495-.038 6.243L119.486.091h10.026l6.659 9.837-4.275.038 6.507-9.875h9.61l-11.426 15.89V9.776l11.993 16.798h-10.215l-6.658-10.291 4.123-.038-6.507 10.329h-10.177zM2.931 50.751V33.933h1.033l7.808 13.479h-.553l7.784-13.479h1.009l.024 16.818h-1.201l-.024-14.968h.336l-7.376 12.734h-.601l-7.4-12.734h.36v14.968H2.931zm20.159 0l7.736-16.818h1.225l7.736 16.818h-1.321l-7.304-16.049h.529l-7.28 16.049H23.09zm2.835-4.733l.408-1.033H36.4l.408 1.033H25.925zm16.916 4.733V33.933h6.03c1.41 0 2.619.224 3.628.673s1.786 1.097 2.331 1.946c.545.833.817 1.85.817 3.051 0 1.169-.272 2.178-.817 3.027-.545.833-1.321 1.482-2.331 1.946-1.009.448-2.218.673-3.628.673h-5.358l.553-.577v6.079h-1.225zm11.676 0l-4.373-6.103h1.393l4.373 6.103h-1.394zm-10.451-6.006l-.553-.577h5.358c1.81 0 3.179-.4 4.108-1.201.945-.801 1.417-1.922 1.417-3.364 0-1.458-.472-2.579-1.417-3.364-.929-.801-2.298-1.201-4.108-1.201h-5.358l.553-.601v10.307zm17.124 1.754l-.048-1.538 10.715-11.028h1.49l-7.496 7.76-.697.745-3.964 4.06zm-1.057 4.253V33.933h1.225v16.818h-1.225zm12.229 0l-7.568-8.649.841-.889 8.217 9.538h-1.49zm5.745-9.082h9.106v1.081h-9.106V41.67zm.144 7.977H88.63v1.105H77.026V33.933H88.27v1.105H78.252v14.608zm18.066 1.105V35.038h-6.055v-1.105h13.335v1.105h-6.055v15.713h-1.225zm10.318 0V33.933h1.226v16.818h-1.226zm7.086 0V33.933h1.033l11.989 15.305h-.553V33.933h1.226v16.818h-1.009l-12.013-15.304h.552v15.304h-1.225zm26.752.12c-1.266 0-2.435-.208-3.508-.625-1.073-.432-2.01-1.033-2.811-1.802a8.17 8.17 0 0 1-1.826-2.691c-.433-1.041-.649-2.178-.649-3.412s.216-2.363.649-3.388a7.94 7.94 0 0 1 1.85-2.715 8.46 8.46 0 0 1 2.787-1.778c1.073-.432 2.25-.649 3.532-.649 1.217 0 2.346.192 3.387.577s1.93.961 2.667 1.73l-.769.817c-.736-.721-1.545-1.233-2.426-1.538-.865-.304-1.81-.456-2.835-.456-1.089 0-2.099.184-3.028.553a7.27 7.27 0 0 0-2.426 1.562 7.26 7.26 0 0 0-1.61 2.355c-.368.897-.552 1.874-.552 2.931s.184 2.034.552 2.931a7.26 7.26 0 0 0 1.61 2.355 7.27 7.27 0 0 0 2.426 1.562c.929.369 1.939.553 3.028.553a8.55 8.55 0 0 0 2.811-.456c.897-.304 1.714-.809 2.45-1.514l.697.937c-.753.721-1.658 1.265-2.715 1.634-1.041.352-2.138.529-3.291.529zm4.829-2.282v-6.175h1.177v6.295l-1.177-.12z" />
-						</svg>
-					</div>
-					<div class="col">
-						<h5 class="text-white mt-4 pt-2 mt-md-0 pt-md-0 text-center text-md-end"> Follow us: </h5>
-						<ul class="m-0 list-unstyled d-flex justify-content-center justify-content-md-end gap-4 gap-md-3">
-							<li title="Facebook">
-								<a href="#" class="text-decoration-none">
-									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" fill="none">
-										<path d="M10.001 11.235l.543-3.451H7.198V5.54c0-.944.467-1.866 1.961-1.866h1.543V.735A18.7 18.7 0 0 0 7.986.503c-2.754 0-4.552 1.656-4.552 4.648v2.632H.381v3.451h3.053v8.348h3.764v-8.348h2.803z" fill="#fff" />
-									</svg>
-								</a>
-							</li>
-							<li title="Instagram">
-								<a href="#" class="text-decoration-none">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-										<path d="M7.212 10.043a3.18 3.18 0 0 1 3.178-3.18 3.18 3.18 0 1 1 0 6.36 3.18 3.18 0 0 1-3.178-3.18zm-1.719 0a4.9 4.9 0 0 0 4.897 4.899 4.9 4.9 0 0 0 4.897-4.898 4.9 4.9 0 0 0-4.897-4.898 4.9 4.9 0 0 0-4.897 4.898zm8.844-5.093c0 .226.067.448.193.636s.304.335.513.422.439.109.661.065.426-.153.586-.313.269-.364.313-.586.022-.452-.065-.661-.233-.388-.421-.514-.409-.193-.636-.193h0c-.303 0-.594.121-.809.335s-.335.506-.336.809zM6.537 17.808c-.93-.042-1.435-.197-1.771-.328-.445-.173-.763-.38-1.097-.714s-.541-.651-.713-1.096c-.131-.336-.286-.841-.328-1.772l-.055-3.855.055-3.855c.042-.93.198-1.435.328-1.772.173-.445.38-.763.713-1.097a2.94 2.94 0 0 1 1.097-.714c.336-.131.841-.286 1.771-.328l3.853-.055 3.854.055c.93.042 1.434.198 1.771.328.445.173.763.38 1.097.714s.54.652.713 1.097c.131.336.286.841.328 1.772l.055 3.855-.055 3.855c-.042.93-.198 1.436-.328 1.772-.173.445-.38.763-.713 1.096s-.652.54-1.097.714c-.336.131-.841.286-1.771.328l-3.854.055c-2.547 0-2.848-.009-3.853-.055zM6.459.561c-1.015.046-1.709.207-2.315.443-.627.244-1.159.57-1.689 1.1a4.66 4.66 0 0 0-1.1 1.69C1.118 4.4.958 5.094.911 6.11l-.058 3.933.058 3.933c.046 1.016.207 1.709.443 2.316a4.66 4.66 0 0 0 1.1 1.69c.531.53 1.062.856 1.689 1.1.607.236 1.3.397 2.315.443l3.932.058 3.932-.058c1.015-.046 1.709-.207 2.315-.443a4.69 4.69 0 0 0 1.689-1.1c.531-.53.856-1.063 1.1-1.69.236-.606.398-1.3.443-2.315l.057-3.933-.057-3.933c-.046-1.016-.207-1.71-.443-2.316a4.69 4.69 0 0 0-1.1-1.69c-.53-.531-1.062-.857-1.689-1.1-.607-.236-1.3-.398-2.315-.443L10.391.503 6.459.561z" fill="#fff" />
-									</svg>
-								</a>
-							</li>
-							<li title="LinkedIn">
-								<a href="#" class="text-decoration-none">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#fff">
-										<path d="M20.121 20.162v-7.325c0-3.6-.775-6.35-4.975-6.35-2.025 0-3.375 1.1-3.925 2.15h-.05V6.812H7.196v13.35h4.15v-6.625c0-1.75.325-3.425 2.475-3.425 2.125 0 2.15 1.975 2.15 3.525v6.5h4.15v.025zM.446 6.813h4.15v13.35H.446V6.813zM2.521.162a2.4 2.4 0 0 0-2.4 2.4c0 1.325 1.075 2.425 2.4 2.425s2.4-1.1 2.4-2.425a2.4 2.4 0 0 0-2.4-2.4z" />
-									</svg>
-								</a>
-							</li>
-							<li title="Youtube">
-								<a href="#" class="text-decoration-none">
-									<svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" fill="none">
-										<path d="M28.098 3.292A3.58 3.58 0 0 0 25.58.774C23.345.162 14.403.162 14.403.162s-8.941 0-11.176.588c-1.2.329-2.188 1.318-2.518 2.541-.588 2.235-.588 6.871-.588 6.871s0 4.659.588 6.87a3.58 3.58 0 0 0 2.518 2.518c2.259.612 11.177.612 11.177.612s8.941 0 11.176-.589a3.58 3.58 0 0 0 2.518-2.517c.588-2.235.588-6.87.588-6.87s.023-4.659-.588-6.894zM11.557 14.445V5.88l7.435 4.282-7.435 4.282z" fill="#fff" />
-									</svg>
-								</a>
-							</li>
-							<li title="X">
-								<a href="#" class="text-decoration-none">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="#fff">
-										<path d="M11.044 7.694L17.523.162h-1.535l-5.626 6.539L5.869.162H.686l6.795 9.889-6.795 7.898h1.535l5.941-6.906 4.745 6.906h5.182L11.044 7.694h0zM2.775 1.318h2.358l10.855 15.527H13.63L2.775 1.318z" />
-										<path d="M7.213.597H2.427L13.74 17.567h4.786L7.213.597z" stroke="#fff" stroke-width=".737" />
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<hr class="m-0">
-			<div class="container">
-				<div class="row flex-wrap-reverse row-cols-1 row-cols-lg-2 gap-3 gap-lg-0 py-4">
-					<div class="col">
-						<p class="m-0 text-center text-lg-start"> &copy; 2024 Wefixmarketing.Inc All rights reserved </p>
-					</div>
-					<div class="col">
-						<ul class="m-0 list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-end column-gap-5 row-gap-3">
-							<li>
-								<a href="#" class="text-decoration-none text-white"> Terms &amp; Condition </a>
-							</li>
-							<li>
-								<a href="#" class="text-decoration-none text-white"> Privacy Policy </a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Footer end -->
-		<!-- Scripts -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				// Service carousel
-				if ($('.service-carousel').length) {
-					$('.service-carousel').owlCarousel({
-						margin: 48,
-						loop: true,
-						dots: false,
-						autoWidth: true,
-						autoplay: true,
-						smartSpeed: 10000,
-						autoplaySpeed: 10000,
-						autoHeight: true,
-						slideTransition: 'linear',
-					});
-				}
-				// Story carousel
-				if ($('.story-carousel').length) {
-					$('.story-carousel').owlCarousel({
-						loop: true,
-						margin: 20,
-						autoplay: true,
-						nav: true,
-						dots: false,
-						responsiveClass: true,
-						autoHeight: true,
-						responsive: {
-							0: {
-								items: 1,
-							},
-							768: {
-								items: 2,
-							},
-						},
-					});
-				}
-			});
-		</script>
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="public/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>We Fix Marketing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar-nav">
+    <header>
+      <nav class="navbar navbar-expand-xl fixed-top bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="/" aria-label="WeFixMarketing logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="110" height="38" fill="none">
+              <path d="M6.489 19.829L.277.417h6.738l5.019 16.389H8.652L13.976.417h6.018l4.964 16.389h-3.244L26.954.417h6.212l-6.212 19.411h-7.016L15.89 6.407h1.886l-4.271 13.422H6.489zm34.12-12.201h8.652v4.714h-8.652V7.627zm.444 7.265h9.706v4.936H34.619V.417h15.779v4.936h-9.345v9.539zm26.64-6.212h8.541v4.936h-8.541V8.681zm.444 11.148h-6.544V.417H77.37v4.936h-9.234v14.475zm11.302 0V.417h6.544v19.411h-6.544zm7.892 0l8.652-12.09-.028 4.576L87.579.417h7.349l4.881 7.21-3.134.028 4.769-7.238h7.044l-8.375 11.647V7.516l8.791 12.312h-7.487l-4.881-7.543 3.023-.028-4.77 7.57h-7.46z" fill="#000"></path>
+              <path d="M2.148 37.089V24.762h.757l5.723 9.879h-.405l5.706-9.879h.74l.018 12.327h-.88l-.018-10.971h.247l-5.406 9.333h-.44l-5.424-9.333h.264v10.971h-.88zm14.776 0l5.67-12.327h.898l5.67 12.327h-.968l-5.353-11.763h.387l-5.336 11.764h-.969zm2.078-3.469l.299-.757h7.379l.299.757h-7.977zm12.399 3.469V24.762h4.42c1.033 0 1.919.164 2.659.493s1.309.804 1.708 1.426c.399.611.599 1.356.599 2.236 0 .857-.2 1.597-.599 2.219-.399.61-.969 1.086-1.708 1.426-.74.329-1.626.493-2.659.493h-3.927l.405-.423v4.455h-.898zm8.558 0l-3.205-4.473h1.021l3.205 4.473h-1.021zm-7.66-4.403l-.405-.423h3.927c1.327 0 2.33-.294 3.011-.881.693-.587 1.039-1.409 1.039-2.465 0-1.068-.346-1.89-1.039-2.465-.681-.587-1.685-.881-3.011-.881h-3.927l.405-.44v7.555zm12.551 1.285l-.035-1.127 7.854-8.083h1.092l-5.494 5.688-.511.546-2.906 2.976zm-.775 3.117V24.762h.898v12.327h-.898zm8.963 0l-5.547-6.34.616-.652 6.023 6.991h-1.092zm4.211-6.657h6.674v.793H57.25v-.793zm.106 5.847h7.607v.81h-8.506V24.762h8.241v.81h-7.343v10.707zm13.242.81V25.572H66.16v-.81h9.773v.81h-4.438v11.517h-.898zm7.563 0V24.762h.898v12.327h-.898zm5.194 0V24.762h.757l8.787 11.218h-.405V24.762h.898v12.327h-.74l-8.805-11.218h.405v11.218h-.898zm19.608.088c-.928 0-1.785-.153-2.571-.458a6.39 6.39 0 0 1-2.061-1.321c-.575-.564-1.021-1.221-1.338-1.972-.317-.763-.475-1.597-.475-2.501s.159-1.732.475-2.483a5.82 5.82 0 0 1 1.356-1.99c.587-.564 1.268-.998 2.043-1.303.786-.317 1.649-.475 2.588-.475a7.11 7.11 0 0 1 2.483.423c.764.282 1.415.704 1.955 1.268l-.563.599c-.54-.528-1.133-.904-1.779-1.127-.634-.223-1.327-.335-2.078-.335-.798 0-1.538.135-2.219.405A5.32 5.32 0 0 0 99 27.051c-.505.493-.898 1.068-1.18 1.726-.27.657-.405 1.374-.405 2.148s.135 1.491.405 2.148c.282.657.675 1.233 1.18 1.726s1.097.875 1.778 1.145 1.421.405 2.219.405a6.26 6.26 0 0 0 2.06-.335c.658-.223 1.257-.593 1.797-1.109l.51.687c-.551.528-1.215.927-1.99 1.197a7.47 7.47 0 0 1-2.412.387zm3.539-1.673v-4.526h.863v4.614l-.863-.088z" fill="#686868"></path>
+            </svg>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#the_struggle">THE <span class="d-xl-block"></span>STRUGGLE </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#the_solution">THE <span class="d-xl-block"></span>SOLUTION </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#success_stories">SUCCESS <span class="d-xl-block"></span>STORIES </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#our_guarantee">OUR <span class="d-xl-block"></span>GUARANTEE </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#origin_story">ORIGIN <span class="d-xl-block"></span>STORY </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#unique_approach">UNIQUE <span class="d-xl-block"></span>APPROACH </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lh-1 fw-medium text-center" href="#next_step">NEXT <span class="d-xl-block"></span>STEP </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-black ms-auto me-2 me-xl-0 d-none d-sm-block">GET IN TOUCH <img src="public/images/arrow-right-up.svg" alt="Arrow">
+          </a>
+          <button class="navbar-toggler pe-0" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" type="button" aria-label="Open the menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-start text-bg-dark" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+          <a href="#" class="offcanvas-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="51" fill="#fff">
+              <path d="M8.853 26.574L.378.091h9.194l6.848 22.36h-4.616L19.068.091h8.21l6.772 22.36h-4.427l7.15-22.36h8.475l-8.475 26.483h-9.572L21.679 8.263h2.573l-5.826 18.311H8.853zm46.55-16.647h11.804v6.432H55.404V9.927zm.605 9.912H69.25v6.734H47.232V.091h21.527v6.734h-12.75V19.84zm36.345-8.475h11.652v6.734H92.354v-6.734zm.605 15.209H84.03V.091h21.528v6.734H92.959v19.749zm15.419 0V.091h8.929v26.483h-8.929zm10.768 0l11.804-16.495-.038 6.243L119.486.091h10.026l6.659 9.837-4.275.038 6.507-9.875h9.61l-11.426 15.89V9.776l11.993 16.798h-10.215l-6.658-10.291 4.123-.038-6.507 10.329h-10.177zM2.931 50.751V33.933h1.033l7.808 13.479h-.553l7.784-13.479h1.009l.024 16.818h-1.201l-.024-14.968h.336l-7.376 12.734h-.601l-7.4-12.734h.36v14.968H2.931zm20.159 0l7.736-16.818h1.225l7.736 16.818h-1.321l-7.304-16.049h.529l-7.28 16.049H23.09zm2.835-4.733l.408-1.033H36.4l.408 1.033H25.925zm16.916 4.733V33.933h6.03c1.41 0 2.619.224 3.628.673s1.786 1.097 2.331 1.946c.545.833.817 1.85.817 3.051 0 1.169-.272 2.178-.817 3.027-.545.833-1.321 1.482-2.331 1.946-1.009.448-2.218.673-3.628.673h-5.358l.553-.577v6.079h-1.225zm11.676 0l-4.373-6.103h1.393l4.373 6.103h-1.394zm-10.451-6.006l-.553-.577h5.358c1.81 0 3.179-.4 4.108-1.201.945-.801 1.417-1.922 1.417-3.364 0-1.458-.472-2.579-1.417-3.364-.929-.801-2.298-1.201-4.108-1.201h-5.358l.553-.601v10.307zm17.124 1.754l-.048-1.538 10.715-11.028h1.49l-7.496 7.76-.697.745-3.964 4.06zm-1.057 4.253V33.933h1.225v16.818h-1.225zm12.229 0l-7.568-8.649.841-.889 8.217 9.538h-1.49zm5.745-9.082h9.106v1.081h-9.106V41.67zm.144 7.977H88.63v1.105H77.026V33.933H88.27v1.105H78.252v14.608zm18.066 1.105V35.038h-6.055v-1.105h13.335v1.105h-6.055v15.713h-1.225zm10.318 0V33.933h1.226v16.818h-1.226zm7.086 0V33.933h1.033l11.989 15.305h-.553V33.933h1.226v16.818h-1.009l-12.013-15.304h.552v15.304h-1.225zm26.752.12c-1.266 0-2.435-.208-3.508-.625-1.073-.432-2.01-1.033-2.811-1.802a8.17 8.17 0 0 1-1.826-2.691c-.433-1.041-.649-2.178-.649-3.412s.216-2.363.649-3.388a7.94 7.94 0 0 1 1.85-2.715 8.46 8.46 0 0 1 2.787-1.778c1.073-.432 2.25-.649 3.532-.649 1.217 0 2.346.192 3.387.577s1.93.961 2.667 1.73l-.769.817c-.736-.721-1.545-1.233-2.426-1.538-.865-.304-1.81-.456-2.835-.456-1.089 0-2.099.184-3.028.553a7.27 7.27 0 0 0-2.426 1.562 7.26 7.26 0 0 0-1.61 2.355c-.368.897-.552 1.874-.552 2.931s.184 2.034.552 2.931a7.26 7.26 0 0 0 1.61 2.355 7.27 7.27 0 0 0 2.426 1.562c.929.369 1.939.553 3.028.553a8.55 8.55 0 0 0 2.811-.456c.897-.304 1.714-.809 2.45-1.514l.697.937c-.753.721-1.658 1.265-2.715 1.634-1.041.352-2.138.529-3.291.529zm4.829-2.282v-6.175h1.177v6.295l-1.177-.12z"></path>
+            </svg>
+          </a>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close the menu"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#the_struggle">THE STRUGGLE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#the_solution">THE SOLUTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#success_stories">SUCCESS STORIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#our_guarantee">OUR GUARANTEE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#origin_story">ORIGIN STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#unique_approach">UNIQUE APPROACH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light py-3 fw-medium" href="#next_step">NEXT STEP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="py-5" id="hero">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col text-center">
+            <div class="position-relative overflow-hidden">
+              <video class="position-absolute top-0 start-0 w-100 h-100 m-0 object-fit-cover" autoplay loop muted>
+                <source src="public/videos/wefix.mp4" type="video/mp4">Your browser does not support the video tag.
+              </video>
+              <p class="fw-bolder hero-title hero-title-primary mb-0 bg-white position-relative start-0 w-100 top-0 h-100 blend-mode-screen">WE FIX</p>
+            </div>
+            <p class="hero-title hero-title-secondary fw-lighter mb-4 mt-2">MARKETING</p>
+            <p class="display-6 fw-bolder mb-4">EASIEST WAY TO GET <span class="text-danger">BETTER LEADS</span>, <span class="text-primary">MORE CUSTOMERS</span>
+              <br> &amp; SUPERCHARGED ROI, <span class="text-warning">GUARANTEED!</span>
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-gradient">BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carousel service-carousel bg-black text-white py-2 py-lg-3">
+      <div class="item">
+        <div class="d-flex gap-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.27 122.88" fill-rule="evenodd" width="20" height="21">
+            <path d="M18.61 54.89C15.7 28.8 30.94 10.45 59.52 0c-17.5 22.71 14.92 47.31 16.71 70.89 4.19-7.15 6.57-16.69 7.04-29.45 21.43 33.62 3.66 88.57-43.5 80.67-4.33-.72-8.5-2.09-12.3-4.13C10.27 108.8 0 88.79 0 69.68 0 57.5 5.21 46.63 11.95 37.99c.9 8.46 2.82 14.77 6.66 16.9h0z" fill="#2E8B57"/>
+            <path d="M33.87 92.58c-4.86-12.55-4.19-32.82 9.42-39.93.1 23.3 23.05 26.27 18.8 51.14 3.92-4.44 5.9-11.54 6.25-17.15 6.22 14.24 1.34 25.63-7.53 31.43-26.97 17.64-50.19-18.12-34.75-37.72.47 4.38 5.83 11.14 7.81 12.23h0z" fill="#A4D8B8"/>
+          </svg>
+          <a href="#" class="text-decoration-none text-white fw-bold">WEBSITE MAKEOVERS</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="d-flex gap-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.27 122.88" fill-rule="evenodd" width="20" height="21">
+            <path d="M18.61 54.89C15.7 28.8 30.94 10.45 59.52 0c-17.5 22.71 14.92 47.31 16.71 70.89 4.19-7.15 6.57-16.69 7.04-29.45 21.43 33.62 3.66 88.57-43.5 80.67-4.33-.72-8.5-2.09-12.3-4.13C10.27 108.8 0 88.79 0 69.68 0 57.5 5.21 46.63 11.95 37.99c.9 8.46 2.82 14.77 6.66 16.9h0z" fill="#FC4796"/>
+            <path d="M33.87 92.58c-4.86-12.55-4.19-32.82 9.42-39.93.1 23.3 23.05 26.27 18.8 51.14 3.92-4.44 5.9-11.54 6.25-17.15 6.22 14.24 1.34 25.63-7.53 31.43-26.97 17.64-50.19-18.12-34.75-37.72.47 4.38 5.83 11.14 7.81 12.23h0z" fill="#FFB2D7"/>
+          </svg>
+          <a href="#" class="text-decoration-none text-white fw-bold">REPUTATION MANAGEMENT</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="d-flex gap-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.27 122.88" fill-rule="evenodd" width="20" height="21">
+            <path d="M18.61 54.89C15.7 28.8 30.94 10.45 59.52 0c-17.5 22.71 14.92 47.31 16.71 70.89 4.19-7.15 6.57-16.69 7.04-29.45 21.43 33.62 3.66 88.57-43.5 80.67-4.33-.72-8.5-2.09-12.3-4.13C10.27 108.8 0 88.79 0 69.68 0 57.5 5.21 46.63 11.95 37.99c.9 8.46 2.82 14.77 6.66 16.9h0z" fill="#A52A2A"/>
+            <path d="M33.87 92.58c-4.86-12.55-4.19-32.82 9.42-39.93.1 23.3 23.05 26.27 18.8 51.14 3.92-4.44 5.9-11.54 6.25-17.15 6.22 14.24 1.34 25.63-7.53 31.43-26.97 17.64-50.19-18.12-34.75-37.72.47 4.38 5.83 11.14 7.81 12.23h0z" fill="#D5A3A3"/>
+          </svg>
+          <a href="#" class="text-decoration-none text-white fw-bold">SOCIAL MEDIA MANAGEMENT</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="d-flex gap-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.27 122.88" fill-rule="evenodd" width="20" height="21">
+            <path d="M18.61 54.89C15.7 28.8 30.94 10.45 59.52 0c-17.5 22.71 14.92 47.31 16.71 70.89 4.19-7.15 6.57-16.69 7.04-29.45 21.43 33.62 3.66 88.57-43.5 80.67-4.33-.72-8.5-2.09-12.3-4.13C10.27 108.8 0 88.79 0 69.68 0 57.5 5.21 46.63 11.95 37.99c.9 8.46 2.82 14.77 6.66 16.9h0z" fill="#E7A500"/>
+            <path d="M33.87 92.58c-4.86-12.55-4.19-32.82 9.42-39.93.1 23.3 23.05 26.27 18.8 51.14 3.92-4.44 5.9-11.54 6.25-17.15 6.22 14.24 1.34 25.63-7.53 31.43-26.97 17.64-50.19-18.12-34.75-37.72.47 4.38 5.83 11.14 7.81 12.23h0z" fill="#FCEB8C"/>
+          </svg>
+          <a href="#" class="text-decoration-none text-white fw-bold">PPC ADVERTISING</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="d-flex gap-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.27 122.88" fill-rule="evenodd" width="20" height="21">
+            <path d="M18.61 54.89C15.7 28.8 30.94 10.45 59.52 0c-17.5 22.71 14.92 47.31 16.71 70.89 4.19-7.15 6.57-16.69 7.04-29.45 21.43 33.62 3.66 88.57-43.5 80.67-4.33-.72-8.5-2.09-12.3-4.13C10.27 108.8 0 88.79 0 69.68 0 57.5 5.21 46.63 11.95 37.99c.9 8.46 2.82 14.77 6.66 16.9h0z" fill="#0F8CC7"/>
+            <path d="M33.87 92.58c-4.86-12.55-4.19-32.82 9.42-39.93.1 23.3 23.05 26.27 18.8 51.14 3.92-4.44 5.9-11.54 6.25-17.15 6.22 14.24 1.34 25.63-7.53 31.43-26.97 17.64-50.19-18.12-34.75-37.72.47 4.38 5.83 11.14 7.81 12.23h0z" fill="#8FD9E3"/>
+          </svg>
+          <a href="#" class="text-decoration-none text-white fw-bold">SEO</a>
+        </div>
+      </div>
+    </div>
+    <div class="py-5" id="the_struggle">
+      <div class="container py-lg-5">
+        <div class="row section-heading text-center text-md-start mb-4 mb-md-0">
+          <div class="col">
+            <p class="fw-bolder lh-1 mb-0 display-1">THE STRUGGLE</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5">
+          <div class="col pt-md-4">
+            <p class="fw-bolder display-5">STRUGGLING WITH YOUR MARKETING?</p>
+            <p>Do You Feel Ike Your Marketing Efforts Arent Bringing In Enough Customers?</p>
+            <p>Are You Spending Money On Ads But Not Seeing Results? Is Your Business Not Growing As Fast As You would Like?</p>
+            <p class="fw-bold">YOU ARE NOT ALONE.</p>
+            <p>Many Local Businesses Face These Same Challenges Every Day.</p>
+            <div class="pt-2 text-center">
+              <a href="#" class="btn btn-gradient">BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <img src="public/images/struggle.webp" alt="Struggle" class="w-100 position-relative z-1 featured-image" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient py-5" id="the_solution">
+      <div class="container py-lg-5">
+        <div class="row mb-4 mb-lg-0 align-items-center">
+          <div class="col-12 col-lg-7 col-xl-6 section-heading text-center text-md-start">
+            <p class="fw-bolder lh-1 mb-0 display-1">THE SOLUTION</p>
+            <p class="fw-bolder mb-4 mb-md-0 mb-lg-5 display-5">WE HAVE SOLUTIONS <br>FOR YOUR MARKETING! </p>
+          </div>
+          <div class="col-12 col-lg-5 col-xl-6">
+            <p class="m-0">We Started We Fix Marketing Because We Saw Local Businesses Struggling To Attract Customers. Our Mission Is To Help Businesses. Like Yours Succeed By Making Marketing Simple And Effective.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="public/images/solution.webp" alt="The solution" class="w-100" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5" id="success_stories">
+      <div class="container py-lg-5">
+        <div class="row section-heading text-center mb-4 mb-md-0">
+          <div class="col">
+            <p class="fw-bolder lh-1 mb-0 display-1">SUCCESS STORIES</p>
+            <p class="fw-bolder mb-4 display-5">OUR SUCCESS STORIES</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="px-5 position-relative">
+              <div class="owl-carousel story-carousel owl-loaded owl-drag">
+                <div class="owl-stage-outer owl-height" style="height: 468.641px;">
+                  <div class="owl-stage" style="transform: translate3d(-3660px, 0px, 0px); transition: 0.25s; width: 6710px;">
+                    <div class="owl-item cloned" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-1.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Local Bakery Sees Sweet Success</h4>
+                          <p class="m-0">We helped “Sweet Treats Bakery“ increase their sales by <strong>50%</strong> in just <strong>one month</strong>. By creating targeted online ads and a new sales funnel, they now have more customers than ever. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item active" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item active" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-1.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Local Bakery Sees Sweet Success</h4>
+                          <p class="m-0">We helped “Sweet Treats Bakery“ increase their sales by <strong>50%</strong> in just <strong>one month</strong>. By creating targeted online ads and a new sales funnel, they now have more customers than ever. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 590px; margin-right: 20px;">
+                      <div>
+                        <img src="public/images/story-2.webp" class="d-block w-100" alt="Story">
+                        <div class="bg-white position-relative p-4 mx-4 mt-n5">
+                          <h4 class="fw-bold">Hardware store build traffic</h4>
+                          <p class="m-0">Handy Hardware saw a <strong>30%</strong> increase in foot traffic within <strong>two months</strong>. We improved their online presence, making it casier for customers to find them. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient py-5" id="our_guarantee">
+      <div class="container pb-5 pt-lg-5">
+        <div class="row section-heading text-center text-md-end mb-4 mb-md-0">
+          <div class="col">
+            <p class="fw-bolder lh-1 mb-0 display-1">OUR GUARANTEE</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-gap-5 gx-lg-5">
+          <div class="col">
+            <img src="public/images/guarantee.webp" alt="Our guarantee" class="w-100 position-relative z-1 featured-image" loading="lazy">
+          </div>
+          <div class="col">
+            <p class="fw-bolder display-5">WE OFFER THE GUARANTEE!</p>
+            <p>We are so confident in our services that we offer this guarantee:</p>
+            <p class="fw-bold">If you do not see better leads, more sales, and a higher ROI within 90 days, we will work for free until you do.</p>
+            <p>We stand by our promise to help your business grow.</p>
+            <div class="pt-2 text-center">
+              <a href="#" class="btn btn-gradient">BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="newsletter">
+      <div class="container">
+        <div class="position-relative overflow-hidden">
+          <video class="w-100 position-absolute top-50 start-50 translate-middle" autoplay loop muted>
+            <source src="public/videos/wefix.mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <div class="p-5 position-relative z-1 bg-blur bg-black bg-opacity-25">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-7">
+                <p class="text-white display-5 fw-bolder">READY TO <br>SUPERCHARGE YOUR <br>LOCAL MARKETING? </p>
+              </div>
+              <div class="col">
+                <p class="text-white fw-bold mb-3">Sign up for the weekly WE FIX Marketing Newsletter</p>
+                <form method="POST" class="subscriber-form">
+                  <div class="mb-3">
+                    <input type="email" class="form-control ps-5" placeholder="Enter Email Address" required="">
+                  </div>
+                  <button aria-label="Submit the form" type="submit" class="btn btn-black w-100 fw-bolder">SIGN UP NOW <img src="public/images/arrow-right-up.svg" alt="Arrow">
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5" id="origin_story">
+      <div class="container py-lg-5">
+        <div class="row section-heading text-center text-md-start mb-4 mb-md-0">
+          <div class="col">
+            <p class="fw-bolder lh-1 mb-0 display-1">ORIGIN STORY</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 flex-wrap-reverse row-cols-md-2 row-gap-5 gx-lg-5">
+          <div class="col pt-md-4">
+            <p class="fw-bolder display-5">OUR ROOTS, OUR JOURNEY</p>
+            <p>We started We Fix Marketing because we saw local businesses struggling to attract customers.</p>
+            <p class="fw-bold">Our mission is to help businesses. like yours succeed by making marketing simple &amp; effective.</p>
+            <p>With years of experience in sales funnels, pay-per-click advertising, &amp; search engine optimization, we are dedicated to helping you reach your goals.</p>
+            <div class="pt-2 text-center">
+              <a href="#" class="btn btn-gradient">BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <img src="public/images/origin-story.webp" alt="Origin story" class="w-100 position-relative z-1 featured-image" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient py-5" id="unique_approach">
+      <div class="container py-lg-5">
+        <div class="row section-heading text-center text-md-end mb-4 mb-md-0">
+          <div class="col">
+            <p class="fw-bolder lh-1 mb-0 display-1">OUR APPROACH</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-gap-5 gx-lg-5">
+          <div class="col">
+            <img src="public/images/our-approach.webp" alt="Our approach" class="w-100 position-relative z-1 featured-image" loading="lazy">
+          </div>
+          <div class="col pt-md-4">
+            <p class="fw-bolder display-5">WHAT MAKES US DIFFERENT</p>
+            <p>At We Fix Marketing, we specialize in helping local businesses like yours.</p>
+            <p>We help you attract better leads, make more sales, and get a higher return on your marketing investment-all with less stress.</p>
+            <p class="fw-bold">Our proven strategies are designed to transform your marketing Quickly and effectively.</p>
+            <div class="pt-2 text-center">
+              <a href="#" class="btn btn-gradient">BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5" id="next_step">
+      <div class="container py-lg-5">
+        <div class="row section-heading text-center">
+          <div class="col">
+            <p class="fw-bolder lh-1 mb-0 display-1">OUR PROCESS</p>
+            <p class="fw-bolder mb-4 display-5">NEXT STEPS</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 gap-3 gap-md-0">
+          <div class="col">
+            <div class="card bg-gradient h-100">
+              <div class="card-body">
+                <div class="card-icon mb-4">
+                  <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.5036 14.7921L31.6432 2.93175C31.5442 2.8293 31.4252 2.74829 31.2936 2.69374C31.1619 2.6392 31.0205 2.61227 30.8781 2.61465H11.5058C10.3576 2.61465 9.25654 3.07074 8.44469 3.88258C7.63285 4.69443 7.17676 5.79553 7.17676 6.94365V43.9566C7.17676 45.1048 7.63285 46.2059 8.44469 47.0177C9.25654 47.8296 10.3576 48.2856 11.5058 48.2856H39.4917C40.6398 48.2856 41.7409 47.8296 42.5528 47.0177C43.3646 46.2059 43.8207 45.1048 43.8207 43.9566V15.5573C43.8198 15.2704 43.7059 14.9955 43.5036 14.7921ZM40.1259 14.475H33.5837C33.1531 14.475 32.7402 14.304 32.4358 13.9996C32.1313 13.6951 31.9603 13.2822 31.9603 12.8517V6.30945L40.1259 14.475ZM39.4917 46.1211H11.509C10.9349 46.1211 10.3844 45.8931 9.97848 45.4872C9.57255 45.0813 9.34451 44.5307 9.34451 43.9566V6.94365C9.34451 6.36959 9.57255 5.81904 9.97848 5.41312C10.3844 5.00719 10.9349 4.77915 11.509 4.77915H29.7991V12.8517C29.7991 13.8563 30.1981 14.8197 30.9085 15.5301C31.6189 16.2405 32.5823 16.6395 33.5869 16.6395H41.6594V43.9566C41.6594 44.2412 41.6034 44.5229 41.4944 44.7857C41.3854 45.0485 41.2257 45.2873 41.0243 45.4883C40.823 45.6894 40.584 45.8487 40.321 45.9573C40.058 46.0659 39.7762 46.1216 39.4917 46.1211Z" fill="black"></path>
+                    <path d="M21.1526 19.2814C22.0195 19.2814 22.867 19.0243 23.5878 18.5427C24.3086 18.0611 24.8704 17.3765 25.2021 16.5756C25.5339 15.7747 25.6207 14.8934 25.4515 14.0432C25.2824 13.1929 24.865 12.4119 24.252 11.7989C23.639 11.1859 22.858 10.7685 22.0078 10.5994C21.1575 10.4302 20.2762 10.517 19.4753 10.8488C18.6744 11.1805 17.9898 11.7423 17.5082 12.4631C17.0266 13.1839 16.7695 14.0314 16.7695 14.8983C16.771 16.0603 17.2332 17.1743 18.0549 17.996C18.8766 18.8177 19.9906 19.2799 21.1526 19.2814ZM21.1526 12.6796C21.5914 12.6796 22.0204 12.8098 22.3852 13.0535C22.7501 13.2973 23.0345 13.6438 23.2024 14.0492C23.3703 14.4546 23.4142 14.9007 23.3286 15.3311C23.243 15.7615 23.0317 16.1568 22.7214 16.4671C22.4112 16.7773 22.0158 16.9886 21.5855 17.0742C21.1551 17.1598 20.709 17.1159 20.3036 16.948C19.8982 16.7801 19.5517 16.4957 19.3079 16.1309C19.0642 15.766 18.934 15.3371 18.934 14.8983C18.9349 14.3101 19.1689 13.7463 19.5848 13.3304C20.0007 12.9145 20.5645 12.6805 21.1526 12.6796Z" fill="#FF7836"></path>
+                    <path d="M14.8098 27.6687C15.0968 27.6687 15.3721 27.5547 15.5751 27.3517C15.778 27.1488 15.892 26.8735 15.892 26.5865V25.9263C15.8935 24.863 16.3165 23.8437 17.0684 23.0918C17.8202 22.3399 18.8396 21.9169 19.9029 21.9155H22.4029C23.4662 21.9169 24.4855 22.3399 25.2374 23.0918C25.9892 23.8437 26.4123 24.863 26.4137 25.9263V26.5865C26.4137 26.8735 26.5277 27.1488 26.7307 27.3517C26.9336 27.5547 27.2089 27.6687 27.4959 27.6687C27.783 27.6687 28.0582 27.5547 28.2612 27.3517C28.4642 27.1488 28.5782 26.8735 28.5782 26.5865V25.9263C28.5762 24.2891 27.9249 22.7196 26.7673 21.5619C25.6096 20.4042 24.04 19.753 22.4029 19.751H19.9029C18.2657 19.753 16.6961 20.4042 15.5385 21.5619C14.3808 22.7196 13.7295 24.2891 13.7275 25.9263V26.5865C13.7275 26.8735 13.8416 27.1488 14.0445 27.3517C14.2475 27.5547 14.5228 27.6687 14.8098 27.6687Z" fill="#FF7836"></path>
+                    <path d="M14.2063 35.5876H27.3394C27.6264 35.5876 27.9017 35.4736 28.1047 35.2706C28.3076 35.0676 28.4216 34.7924 28.4216 34.5053C28.4216 34.2183 28.3076 33.943 28.1047 33.7401C27.9017 33.5371 27.6264 33.4231 27.3394 33.4231H14.2063C13.9192 33.4231 13.644 33.5371 13.441 33.7401C13.238 33.943 13.124 34.2183 13.124 34.5053C13.124 34.7924 13.238 35.0676 13.441 35.2706C13.644 35.4736 13.9192 35.5876 14.2063 35.5876Z" fill="#FF7836"></path>
+                    <path d="M34.769 39.1223H14.2063C13.9192 39.1223 13.644 39.2363 13.441 39.4393C13.238 39.6423 13.124 39.9175 13.124 40.2046C13.124 40.4916 13.238 40.7669 13.441 40.9698C13.644 41.1728 13.9192 41.2868 14.2063 41.2868H34.769C35.0561 41.2868 35.3314 41.1728 35.5343 40.9698C35.7373 40.7669 35.8513 40.4916 35.8513 40.2046C35.8513 39.9175 35.7373 39.6423 35.5343 39.4393C35.3314 39.2363 35.0561 39.1223 34.769 39.1223Z" fill="#FF7836"></path>
+                  </svg>
+                </div>
+                <h5 class="card-title fw-bold">YOUR GOALS &amp; CHALLENGES</h5>
+                <p class="card-text fw-medium">We will discuss your business goals and challenges</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-gradient h-100">
+              <div class="card-body">
+                <div class="card-icon mb-4">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.5598 8.64801L35.0261 4.11285C34.0037 3.07082 32.6242 2.49707 31.142 2.49707H10.3154C7.29199 2.49707 4.83105 4.95801 4.83105 7.98144V38.9189C4.83105 41.9424 7.29199 44.4033 10.3154 44.4033H35.6842C38.7076 44.4033 41.1686 41.9494 41.1686 38.9316V12.5236C41.1686 11.0428 40.5948 9.66332 39.5598 8.64801ZM33.2289 5.89598L37.7795 10.4466C38.3336 10.9894 38.6373 11.7277 38.6373 12.525V12.9497H32.2754C31.4233 12.9497 30.7286 12.2564 30.7286 11.4028V5.02832H31.142C31.9379 5.02832 32.6762 5.33348 33.2289 5.89598ZM35.6842 41.8721H10.3154C8.68699 41.8721 7.36231 40.5488 7.36231 38.9189V7.98144C7.36231 6.35301 8.68699 5.02832 10.3154 5.02832H28.1973V11.4014C28.1973 13.65 30.0268 15.4796 32.2754 15.4796H38.6373V38.933C38.6373 40.553 37.3126 41.8721 35.6842 41.8721Z" fill="black"></path>
+                    <path d="M31.9125 20.5139H14.0869C13.388 20.5139 12.8213 21.0806 12.8213 21.7795C12.8213 22.4784 13.388 23.0452 14.0869 23.0452H31.9125C32.6114 23.0452 33.1782 22.4784 33.1782 21.7795C33.1782 21.0806 32.6114 20.5139 31.9125 20.5139Z" fill="#FF7836"></path>
+                    <path d="M31.9125 25.7607H14.0869C13.388 25.7607 12.8213 26.3275 12.8213 27.0264C12.8213 27.7253 13.388 28.292 14.0869 28.292H31.9125C32.6114 28.292 33.1782 27.7253 33.1782 27.0264C33.1782 26.3275 32.6114 25.7607 31.9125 25.7607Z" fill="#FF7836"></path>
+                    <path d="M31.9122 34.3064H27.626C26.9271 34.3064 26.3604 34.8731 26.3604 35.572C26.3604 36.2709 26.9271 36.8376 27.626 36.8376H31.9122C32.6111 36.8376 33.1779 36.2709 33.1779 35.572C33.1779 34.8731 32.6111 34.3064 31.9122 34.3064Z" fill="#FF7836"></path>
+                  </svg>
+                </div>
+                <h5 class="card-title fw-bold">GET A CUSTOM PLAN</h5>
+                <p class="card-text fw-medium">We will create a marketing strategy tailored just for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-gradient h-100">
+              <div class="card-body">
+                <div class="card-icon mb-4">
+                  <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.43857 21.4502C1.48121 21.4501 1.5238 21.4473 1.56607 21.4418C8.45288 20.5073 15.1697 18.588 21.5104 15.7427C27.9138 12.8617 33.8632 9.06304 39.1711 4.46644L38.0292 9.03582C37.9691 9.27687 38.0071 9.53193 38.1349 9.74498C38.2627 9.95802 38.4698 10.1116 38.7108 10.1721C38.7853 10.1905 38.8618 10.2 38.9386 10.2002C39.1475 10.1999 39.3504 10.1299 39.515 10.0011C39.6796 9.87236 39.7964 9.69232 39.847 9.48957L41.722 1.98957C41.7565 1.85148 41.759 1.70735 41.7295 1.56813C41.6999 1.4289 41.6391 1.29823 41.5515 1.18601C41.464 1.0738 41.352 0.982993 41.2242 0.920477C41.0963 0.857961 40.9559 0.825377 40.8136 0.825195H33.3136C33.0649 0.825195 32.8265 0.923967 32.6507 1.09978C32.4748 1.2756 32.3761 1.51405 32.3761 1.7627C32.3761 2.01134 32.4748 2.24979 32.6507 2.42561C32.8265 2.60142 33.0649 2.7002 33.3136 2.7002H38.347C33.0753 7.33291 27.1415 11.1525 20.7417 14.0327C14.5646 16.8044 8.02109 18.6738 1.31201 19.5836C1.0763 19.6155 0.86151 19.7357 0.711138 19.92C0.560766 20.1043 0.486059 20.3388 0.502149 20.5761C0.518239 20.8134 0.623924 21.0357 0.797796 21.198C0.971667 21.3603 1.20073 21.4505 1.43857 21.4502Z" fill="#FF7836"></path>
+                    <path d="M40.8135 40.2002H39.876V14.8877C39.876 14.6391 39.7772 14.4006 39.6014 14.2248C39.4256 14.049 39.1871 13.9502 38.9385 13.9502H29.5635C29.3148 13.9502 29.0764 14.049 28.9006 14.2248C28.7247 14.4006 28.626 14.6391 28.626 14.8877V40.2002H26.751V20.5127C26.751 20.2641 26.6522 20.0256 26.4764 19.8498C26.3006 19.674 26.0621 19.5752 25.8135 19.5752H16.4385C16.1898 19.5752 15.9514 19.674 15.7756 19.8498C15.5997 20.0256 15.501 20.2641 15.501 20.5127V40.2002H13.626V26.1377C13.626 25.8891 13.5272 25.6506 13.3514 25.4748C13.1756 25.299 12.9371 25.2002 12.6885 25.2002H3.31348C3.06484 25.2002 2.82638 25.299 2.65056 25.4748C2.47475 25.6506 2.37598 25.8891 2.37598 26.1377V40.2002H1.43848C1.18984 40.2002 0.951379 40.299 0.775564 40.4748C0.599749 40.6506 0.500977 40.8891 0.500977 41.1377C0.500977 41.3863 0.599749 41.6248 0.775564 41.8006C0.951379 41.9764 1.18984 42.0752 1.43848 42.0752H40.8135C41.0621 42.0752 41.3006 41.9764 41.4764 41.8006C41.6522 41.6248 41.751 41.3863 41.751 41.1377C41.751 40.8891 41.6522 40.6506 41.4764 40.4748C41.3006 40.299 41.0621 40.2002 40.8135 40.2002ZM30.501 15.8252H38.001V40.2002H30.501V15.8252ZM17.376 21.4502H24.876V40.2002H17.376V21.4502ZM4.25098 27.0752H11.751V40.2002H4.25098V27.0752Z" fill="black"></path>
+                  </svg>
+                </div>
+                <h5 class="card-title fw-bold">SEE REAL RESULTS</h5>
+                <p class="card-text fw-medium">Watch your business grow with better leads, more sales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mt-5">
+          <div class="col">
+            <a href="#" class="btn btn-gradient">BOOK YOUR CALL <img src="public/images/arrow-right-up.svg" alt="Arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black text-white">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 py-5">
+          <div class="col text-center text-md-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="51" fill="#fff">
+              <path d="M8.853 26.574L.378.091h9.194l6.848 22.36h-4.616L19.068.091h8.21l6.772 22.36h-4.427l7.15-22.36h8.475l-8.475 26.483h-9.572L21.679 8.263h2.573l-5.826 18.311H8.853zm46.55-16.647h11.804v6.432H55.404V9.927zm.605 9.912H69.25v6.734H47.232V.091h21.527v6.734h-12.75V19.84zm36.345-8.475h11.652v6.734H92.354v-6.734zm.605 15.209H84.03V.091h21.528v6.734H92.959v19.749zm15.419 0V.091h8.929v26.483h-8.929zm10.768 0l11.804-16.495-.038 6.243L119.486.091h10.026l6.659 9.837-4.275.038 6.507-9.875h9.61l-11.426 15.89V9.776l11.993 16.798h-10.215l-6.658-10.291 4.123-.038-6.507 10.329h-10.177zM2.931 50.751V33.933h1.033l7.808 13.479h-.553l7.784-13.479h1.009l.024 16.818h-1.201l-.024-14.968h.336l-7.376 12.734h-.601l-7.4-12.734h.36v14.968H2.931zm20.159 0l7.736-16.818h1.225l7.736 16.818h-1.321l-7.304-16.049h.529l-7.28 16.049H23.09zm2.835-4.733l.408-1.033H36.4l.408 1.033H25.925zm16.916 4.733V33.933h6.03c1.41 0 2.619.224 3.628.673s1.786 1.097 2.331 1.946c.545.833.817 1.85.817 3.051 0 1.169-.272 2.178-.817 3.027-.545.833-1.321 1.482-2.331 1.946-1.009.448-2.218.673-3.628.673h-5.358l.553-.577v6.079h-1.225zm11.676 0l-4.373-6.103h1.393l4.373 6.103h-1.394zm-10.451-6.006l-.553-.577h5.358c1.81 0 3.179-.4 4.108-1.201.945-.801 1.417-1.922 1.417-3.364 0-1.458-.472-2.579-1.417-3.364-.929-.801-2.298-1.201-4.108-1.201h-5.358l.553-.601v10.307zm17.124 1.754l-.048-1.538 10.715-11.028h1.49l-7.496 7.76-.697.745-3.964 4.06zm-1.057 4.253V33.933h1.225v16.818h-1.225zm12.229 0l-7.568-8.649.841-.889 8.217 9.538h-1.49zm5.745-9.082h9.106v1.081h-9.106V41.67zm.144 7.977H88.63v1.105H77.026V33.933H88.27v1.105H78.252v14.608zm18.066 1.105V35.038h-6.055v-1.105h13.335v1.105h-6.055v15.713h-1.225zm10.318 0V33.933h1.226v16.818h-1.226zm7.086 0V33.933h1.033l11.989 15.305h-.553V33.933h1.226v16.818h-1.009l-12.013-15.304h.552v15.304h-1.225zm26.752.12c-1.266 0-2.435-.208-3.508-.625-1.073-.432-2.01-1.033-2.811-1.802a8.17 8.17 0 0 1-1.826-2.691c-.433-1.041-.649-2.178-.649-3.412s.216-2.363.649-3.388a7.94 7.94 0 0 1 1.85-2.715 8.46 8.46 0 0 1 2.787-1.778c1.073-.432 2.25-.649 3.532-.649 1.217 0 2.346.192 3.387.577s1.93.961 2.667 1.73l-.769.817c-.736-.721-1.545-1.233-2.426-1.538-.865-.304-1.81-.456-2.835-.456-1.089 0-2.099.184-3.028.553a7.27 7.27 0 0 0-2.426 1.562 7.26 7.26 0 0 0-1.61 2.355c-.368.897-.552 1.874-.552 2.931s.184 2.034.552 2.931a7.26 7.26 0 0 0 1.61 2.355 7.27 7.27 0 0 0 2.426 1.562c.929.369 1.939.553 3.028.553a8.55 8.55 0 0 0 2.811-.456c.897-.304 1.714-.809 2.45-1.514l.697.937c-.753.721-1.658 1.265-2.715 1.634-1.041.352-2.138.529-3.291.529zm4.829-2.282v-6.175h1.177v6.295l-1.177-.12z"></path>
+            </svg>
+          </div>
+          <div class="col">
+            <h5 class="text-white mt-4 pt-2 mt-md-0 pt-md-0 text-center text-md-end">Follow us:</h5>
+            <ul class="m-0 list-unstyled d-flex justify-content-center justify-content-md-end gap-4 gap-md-3">
+              <li>
+                <a href="#" class="text-decoration-none" title="Facebook" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" fill="none">
+                    <path d="M10.001 11.235l.543-3.451H7.198V5.54c0-.944.467-1.866 1.961-1.866h1.543V.735A18.7 18.7 0 0 0 7.986.503c-2.754 0-4.552 1.656-4.552 4.648v2.632H.381v3.451h3.053v8.348h3.764v-8.348h2.803z" fill="#fff"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" title="Instagram" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path d="M7.212 10.043a3.18 3.18 0 0 1 3.178-3.18 3.18 3.18 0 1 1 0 6.36 3.18 3.18 0 0 1-3.178-3.18zm-1.719 0a4.9 4.9 0 0 0 4.897 4.899 4.9 4.9 0 0 0 4.897-4.898 4.9 4.9 0 0 0-4.897-4.898 4.9 4.9 0 0 0-4.897 4.898zm8.844-5.093c0 .226.067.448.193.636s.304.335.513.422.439.109.661.065.426-.153.586-.313.269-.364.313-.586.022-.452-.065-.661-.233-.388-.421-.514-.409-.193-.636-.193h0c-.303 0-.594.121-.809.335s-.335.506-.336.809zM6.537 17.808c-.93-.042-1.435-.197-1.771-.328-.445-.173-.763-.38-1.097-.714s-.541-.651-.713-1.096c-.131-.336-.286-.841-.328-1.772l-.055-3.855.055-3.855c.042-.93.198-1.435.328-1.772.173-.445.38-.763.713-1.097a2.94 2.94 0 0 1 1.097-.714c.336-.131.841-.286 1.771-.328l3.853-.055 3.854.055c.93.042 1.434.198 1.771.328.445.173.763.38 1.097.714s.54.652.713 1.097c.131.336.286.841.328 1.772l.055 3.855-.055 3.855c-.042.93-.198 1.436-.328 1.772-.173.445-.38.763-.713 1.096s-.652.54-1.097.714c-.336.131-.841.286-1.771.328l-3.854.055c-2.547 0-2.848-.009-3.853-.055zM6.459.561c-1.015.046-1.709.207-2.315.443-.627.244-1.159.57-1.689 1.1a4.66 4.66 0 0 0-1.1 1.69C1.118 4.4.958 5.094.911 6.11l-.058 3.933.058 3.933c.046 1.016.207 1.709.443 2.316a4.66 4.66 0 0 0 1.1 1.69c.531.53 1.062.856 1.689 1.1.607.236 1.3.397 2.315.443l3.932.058 3.932-.058c1.015-.046 1.709-.207 2.315-.443a4.69 4.69 0 0 0 1.689-1.1c.531-.53.856-1.063 1.1-1.69.236-.606.398-1.3.443-2.315l.057-3.933-.057-3.933c-.046-1.016-.207-1.71-.443-2.316a4.69 4.69 0 0 0-1.1-1.69c-.53-.531-1.062-.857-1.689-1.1-.607-.236-1.3-.398-2.315-.443L10.391.503 6.459.561z" fill="#fff"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" title="LinkedIn" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#fff">
+                    <path d="M20.121 20.162v-7.325c0-3.6-.775-6.35-4.975-6.35-2.025 0-3.375 1.1-3.925 2.15h-.05V6.812H7.196v13.35h4.15v-6.625c0-1.75.325-3.425 2.475-3.425 2.125 0 2.15 1.975 2.15 3.525v6.5h4.15v.025zM.446 6.813h4.15v13.35H.446V6.813zM2.521.162a2.4 2.4 0 0 0-2.4 2.4c0 1.325 1.075 2.425 2.4 2.425s2.4-1.1 2.4-2.425a2.4 2.4 0 0 0-2.4-2.4z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" title="Youtube" aria-label="Youtube">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" fill="none">
+                    <path d="M28.098 3.292A3.58 3.58 0 0 0 25.58.774C23.345.162 14.403.162 14.403.162s-8.941 0-11.176.588c-1.2.329-2.188 1.318-2.518 2.541-.588 2.235-.588 6.871-.588 6.871s0 4.659.588 6.87a3.58 3.58 0 0 0 2.518 2.518c2.259.612 11.177.612 11.177.612s8.941 0 11.176-.589a3.58 3.58 0 0 0 2.518-2.517c.588-2.235.588-6.87.588-6.87s.023-4.659-.588-6.894zM11.557 14.445V5.88l7.435 4.282-7.435 4.282z" fill="#fff"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" title="X" aria-label="X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="#fff">
+                    <path d="M11.044 7.694L17.523.162h-1.535l-5.626 6.539L5.869.162H.686l6.795 9.889-6.795 7.898h1.535l5.941-6.906 4.745 6.906h5.182L11.044 7.694h0zM2.775 1.318h2.358l10.855 15.527H13.63L2.775 1.318z"></path>
+                    <path d="M7.213.597H2.427L13.74 17.567h4.786L7.213.597z" stroke="#fff" stroke-width=".737"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="m-0">
+      <div class="container">
+        <div class="row flex-wrap-reverse row-cols-1 row-cols-lg-2 gap-3 gap-lg-0 py-4">
+          <div class="col">
+            <p class="m-0 text-center text-lg-start">© 2024 Wefixmarketing.Inc All rights reserved</p>
+          </div>
+          <div class="col">
+            <ul class="m-0 list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-end column-gap-5 row-gap-3">
+              <li>
+                <a href="#" class="text-decoration-none text-white">Terms &amp; Condition</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navLinks.forEach((link) => {
+          link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const offset = document.querySelector('.navbar').offsetHeight ?? 80;
+              const targetPosition = targetElement.offsetTop - offset;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth',
+              });
+              navLinks.forEach((link) => link.classList.remove('active'));
+              this.classList.add('active');
+            }
+          });
+        });
+        if ($('.service-carousel').length) {
+          $('.service-carousel').owlCarousel({
+            margin: 48,
+            loop: true,
+            dots: false,
+            autoWidth: true,
+            autoplay: true,
+            smartSpeed: 20000,
+            autoplaySpeed: 20000,
+            autoHeight: true,
+            slideTransition: 'linear',
+          });
+        }
+        if ($('.story-carousel').length) {
+          $('.story-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            nav: true,
+            dots: false,
+            responsiveClass: true,
+            autoHeight: true,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              768: {
+                items: 2,
+              },
+            },
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
