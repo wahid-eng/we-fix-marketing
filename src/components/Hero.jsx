@@ -25,9 +25,8 @@ export default function Hero() {
 							<p className="display-6 fw-bolder mb-4">
 								EASIEST WAY TO GET{' '}
 								<span className="text-danger">BETTER LEADS</span>,{' '}
-								<span className="text-primary">MORE CUSTOMERS</span>
-								<br /> &amp; SUPERCHARGED ROI,{' '}
-								<span className="text-warning">GUARANTEED!</span>
+								<span className="text-primary">MORE CUSTOMERS</span>SUPERCHARGED
+								ROI, <span className="text-warning">GUARANTEED!</span>
 							</p>
 							<div className="text-center">
 								<a href="#" className="btn btn-gradient">
