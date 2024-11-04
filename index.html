@@ -38,40 +38,39 @@
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script>
-			// Prevent hash update on scroll
-			document.addEventListener('DOMContentLoaded', function () {
-				setTimeout(function () {
-					const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-					navLinks.forEach((link) => {
-						link.addEventListener('click', function (event) {
-							event.preventDefault(); // Prevents the hash from updating the URL
-
-							// Get the target section from the href attribute
-							const targetId = this.getAttribute('href');
-							const targetElement = document.querySelector(targetId);
-
-							if (targetElement) {
-								// Calculate the offset
-								const offset =
-									document.querySelector('.navbar').offsetHeight ?? 0; // Adjust offset as needed
-								const targetPosition = targetElement.offsetTop - offset;
-
-								// Scroll to the element without updating the hash
-								window.scrollTo({
-									top: targetPosition,
-									behavior: 'smooth',
-								});
-
-								// 	// Update active class
-								navLinks.forEach((link) => link.classList.remove('active'));
-								this.classList.add('active');
-							}
-						});
-					});
-				}, 1000);
-			});
-
 			$(document).ready(function () {
+				// Navbar
+				const navbarOffcanvas = new bootstrap.Offcanvas('#navbarOffcanvas');
+				$('.navbar-nav .nav-link').on('click', function (event) {
+					event.preventDefault(); // Prevents the hash from updating the URL
+
+					// Get the target section from the href attribute
+					const targetId = $(this).attr('href');
+					const targetElement = $(targetId);
+
+					if (targetElement.length) {
+						// Calculate the offset
+						const offset = $('.navbar').outerHeight() - 5 || 75; // Adjust offset as needed
+						const targetPosition = targetElement.offset().top - offset;
+
+						// Scroll to the element without updating the hash
+						$('html, body').animate(
+							{
+								scrollTop: targetPosition,
+							},
+							'slow'
+						);
+
+						// Update active class
+						$('.navbar-nav .nav-link').removeClass('active');
+						$(this).addClass('active');
+
+						// Hide the offcanvas menu
+						navbarOffcanvas.hide();
+					}
+				});
+
+				// Service carousel
 				if ($('.service-carousel').length) {
 					$('.service-carousel').owlCarousel({
 						margin: 48,
@@ -86,6 +85,7 @@
 					});
 				}
 
+				// Story carousel
 				if ($('.story-carousel').length) {
 					$('.story-carousel').owlCarousel({
 						loop: true,

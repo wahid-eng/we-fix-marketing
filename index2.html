@@ -561,58 +561,74 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function() {
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        navLinks.forEach((link) => {
-          link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-              const offset = document.querySelector('.navbar').offsetHeight ?? 80;
-              const targetPosition = targetElement.offsetTop - offset;
-              window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth',
-              });
-              navLinks.forEach((link) => link.classList.remove('active'));
-              this.classList.add('active');
-            }
-          });
-        });
-        if ($('.service-carousel').length) {
-          $('.service-carousel').owlCarousel({
-            margin: 48,
-            loop: true,
-            dots: false,
-            autoWidth: true,
-            autoplay: true,
-            smartSpeed: 20000,
-            autoplaySpeed: 20000,
-            autoHeight: true,
-            slideTransition: 'linear',
-          });
-        }
-        if ($('.story-carousel').length) {
-          $('.story-carousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            autoplay: true,
-            nav: true,
-            dots: false,
-            responsiveClass: true,
-            autoHeight: true,
-            responsive: {
-              0: {
-                items: 1,
-              },
-              768: {
-                items: 2,
-              },
-            },
-          });
-        }
-      });
+      $(document).ready(function () {
+				// Navbar
+				const navbarOffcanvas = new bootstrap.Offcanvas('#navbarOffcanvas');
+				$('.navbar-nav .nav-link').on('click', function (event) {
+					event.preventDefault(); // Prevents the hash from updating the URL
+
+					// Get the target section from the href attribute
+					const targetId = $(this).attr('href');
+					const targetElement = $(targetId);
+
+					if (targetElement.length) {
+						// Calculate the offset
+						const offset = $('.navbar').outerHeight() - 5 || 75; // Adjust offset as needed
+						const targetPosition = targetElement.offset().top - offset;
+
+						// Scroll to the element without updating the hash
+						$('html, body').animate(
+							{
+								scrollTop: targetPosition,
+							},
+							'slow'
+						);
+
+						// Update active class
+						$('.navbar-nav .nav-link').removeClass('active');
+						$(this).addClass('active');
+
+						// Hide the offcanvas menu
+						navbarOffcanvas.hide();
+					}
+				});
+
+				// Service carousel
+				if ($('.service-carousel').length) {
+					$('.service-carousel').owlCarousel({
+						margin: 48,
+						loop: true,
+						dots: false,
+						autoWidth: true,
+						autoplay: true,
+						smartSpeed: 20000,
+						autoplaySpeed: 20000,
+						autoHeight: true,
+						slideTransition: 'linear',
+					});
+				}
+
+				// Story carousel
+				if ($('.story-carousel').length) {
+					$('.story-carousel').owlCarousel({
+						loop: true,
+						margin: 20,
+						autoplay: true,
+						nav: true,
+						dots: false,
+						responsiveClass: true,
+						autoHeight: true,
+						responsive: {
+							0: {
+								items: 1,
+							},
+							768: {
+								items: 2,
+							},
+						},
+					});
+				}
+			});
     </script>
   </body>
 </html>
