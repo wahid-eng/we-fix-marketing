@@ -241,10 +241,10 @@ body {
 	white-space: nowrap;
 }
 .hero-title-primary {
-	font-size: calc(100vw / 6);
+	font-size: calc(2.125rem + 10vw);
 }
 .hero-title-secondary {
-	font-size: calc(100vw / 10);
+	font-size: calc(1.25rem + 6vw);
 }
 
 /* Header */
@@ -277,6 +277,15 @@ header {
 	font-size: calc(0.5rem + 1.5vw);
 }
 
+@media (min-width: 576px) {
+	.hero-title-primary {
+		font-size: calc(100vw / 6);
+	}
+	.hero-title-secondary {
+		font-size: calc(100vw / 10);
+	}
+}
+
 @media (min-width: 768px) {
 	.section-heading {
 		p:first-child {
@@ -287,7 +296,7 @@ header {
 		}
 	}
 	.featured-image {
-		margin-top: -1rem;
+		transform: translateY(-1rem);
 	}
 }
 
@@ -298,7 +307,7 @@ header {
 		}
 	}
 	.featured-image {
-		margin-top: -1.5rem;
+		transform: translateY(-1.5rem);
 	}
 	.display-5 {
 		font-size: 3rem;

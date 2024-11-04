@@ -296,7 +296,7 @@ header {
 		}
 	}
 	.featured-image {
-		margin-top: -1rem;
+		transform: translateY(-1rem);
 	}
 }
 
@@ -307,7 +307,7 @@ header {
 		}
 	}
 	.featured-image {
-		margin-top: -1.5rem;
+		transform: translateY(-1.5rem);
 	}
 	.display-5 {
 		font-size: 3rem;
